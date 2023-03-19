@@ -1,0 +1,31 @@
+.section-advanteges {
+  line-height: 1.5em;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: $secondary-font-color;
+}
+
+.section-advanteges__list-of-blocks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.section-advanteges__block {
+  margin: 15px;
+  width: 270px;
+
+  .section-advantages__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 270px;
+    background-color: $our-crew-background;
+
+    .section-advantages__image--svg {
+      height: 70px;
+      width: 70px;
+    }
+  }
+}

@@ -1,0 +1,95 @@
+.portfolio-projects {
+  display: flex;
+  flex-direction: column;
+}
+.portfolio-projects__list {
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+}
+
+.portfolio-projects__card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 50px;
+  border: 1px solid #eeeeee;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  @extend %transition;
+
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  &:hover .portfolio-projects__overlay {
+    transform: translateY(0);
+    background-color: rgba(33, 150, 243, 0.9);
+  }
+
+  .portfolio-projects__note {
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    background-color: $logo-white-font-color;
+
+    .portfolio-projects__note--title {
+      margin-bottom: 20px;
+      padding-left: 24px;
+    }
+  }
+
+  .portfolio-projects__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    @extend %transition;
+    transform: translateY(100%);
+
+    & p {
+      padding: 10px;
+      font-size: 18px;
+      color: $logo-white-font-color;
+      letter-spacing: 0.03em;
+      line-height: 28px;
+      @extend %transition;
+    }
+  }
+}
+
+.portfolio-projects__buttons {
+  margin-left: 310px;
+  margin-right: 318px;
+  margin-bottom: 50px;
+}
+
+.portfolio-projects__buttons li {
+  display: inline-block;
+  margin-left: 8px;
+  border: none;
+  text-decoration: none;
+  color: $logo-white-font-color;
+  @extend %transition;
+}
+.portfolio-projects__buttons__button {
+  padding: 6px 22px 6px 22px;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 1.62em;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  &:hover {
+    background-color: $brand-color;
+    color: $logo-white-font-color;
+    border-color: $brand-color;
+    border: 0px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
