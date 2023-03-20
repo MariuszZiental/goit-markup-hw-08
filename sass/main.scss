@@ -33,9 +33,13 @@ body {
   margin: 0 auto;
 }
 
+main {
+  width: 480px;
+}
+
 section {
-  padding-top: $padding-between;
-  padding-bottom: $padding-between;
+  padding-top: $padding-between-mobile;
+  padding-bottom: $padding-between-mobile;
 }
 
 ul {
@@ -48,7 +52,7 @@ h1 {
   letter-spacing: 0.06em;
   text-align: center;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.75em;
   color: $logo-white-font-color;
 }
@@ -75,4 +79,13 @@ h4 {
 .wraper {
   margin: 0px auto;
   max-width: 1200px;
+}
+
+.mobile-wraper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 480px;
+  margin: auto;
+  
 }

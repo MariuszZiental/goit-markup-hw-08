@@ -33,16 +33,15 @@
           >
         </div>
 
-
-            <nav class="navigation-links menu">
-              <a class="navigation-links__top-link active" href="./index.html"
-                >Agencja</a
-              >
-              <a class="navigation-links__top-link" href="./portfolio.html"
-                >Portfolio</a
-              >
-              <a class="navigation-links__top-link" href="./kontakt">Kontakt</a>
-            </nav>
+        <nav class="navigation-links menu">
+          <a class="navigation-links__top-link active" href="./index.html"
+            >Agencja</a
+          >
+          <a class="navigation-links__top-link" href="./portfolio.html"
+            >Portfolio</a
+          >
+          <a class="navigation-links__top-link" href="./kontakt">Kontakt</a>
+        </nav>
 
         <div class="contact-links">
           <div>
@@ -69,22 +68,26 @@
     </header>
 
     <main>
-      <section class="heading">
-        <div class="heading__text">
-          <h1>efektywne rozwiązania dla waszego biznesu</h1>
+      <section class="section-heading">
+        <div class="section-heading__content mobile-wraper">
+          <div class="section-heading__content--text mobile-wraper">
+            <h1>efektywne rozwiązania dla waszego biznesu</h1>
+          </div>
+          <div class="mobile-wraper">
+            <button
+              class="section-heading__content--button modal__button"
+              type="button"
+              data-modal-open
+            >
+              Zamów usługę
+            </button>
+          </div>
         </div>
-        <button
-          class="heading__button modal__button"
-          type="button"
-          data-modal-open
-        >
-          Zamów usługę
-        </button>
       </section>
 
-      <section class="section-advanteges">
+      <section class="section-advanteges mobile-wraper">
         <div class="section-advanteges__list-of-blocks">
-          <ul class="section-advanteges__block">
+          <ul class="section-advanteges__block .mobile-wraper">
             <li class="section-advantages__image">
               <svg class="section-advantages__image--svg">
                 <use href="./images/svg/icons.svg#icon-antenna"></use>
@@ -145,7 +148,7 @@
         </div>
       </section>
 
-      <section class="section-workscope">
+      <section class="section-workscope mobile-wraper">
         <h2>Czym się zajmujemy</h2>
         <div class="section-workscope__list">
           <div class="workscope__computers--image">
@@ -160,7 +163,7 @@
             </div>
           </div>
 
-          <div class="workscope__graphic--image  active-workscope">
+          <div class="workscope__graphic--image active-workscope">
             <div class="section-workscope__gradient">
               <p>rozwiązania graficzne</p>
             </div>
@@ -168,15 +171,15 @@
         </div>
       </section>
 
-      <section class="section-crew">
+      <section class="section-crew mobile-wraper">
         <h2>Nasz zespół</h2>
 
-        <div class="section-crew__list-of-members">
-          <div class="member-profile">
+        <div class="section-crew__list-of-members mobile-wraper">
+          <div class="member-profile member-profile-mobile">
             <img
               alt="picture-of-a-man"
-              width="270"
-              height="260"
+              width="450"
+              height="460"
               src="images/main-page/crewprofile1.jpg"
             />
             <h4>John Doe</h4>
@@ -229,11 +232,11 @@
               </li>
             </ul>
           </div>
-          <div class="member-profile">
+          <div class="member-profile member-profile-mobile">
             <img
               alt="picture-of-a-woman"
-              width="270"
-              height="260"
+              width="450"
+              height="460"
               src="images/main-page/crewprofile2.jpg"
             />
             <h4>John Doe</h4>
@@ -286,11 +289,11 @@
               </li>
             </ul>
           </div>
-          <div class="member-profile">
+          <div class="member-profile member-profile-mobile">
             <img
               alt="picture-of-a-man2"
-              width="270"
-              height="260"
+              width="450"
+              height="460"
               src="images/main-page/crewprofile3.jpg"
             />
             <h4>John Doe</h4>
@@ -343,11 +346,11 @@
               </li>
             </ul>
           </div>
-          <div class="member-profile">
+          <div class="member-profile member-profile-mobile">
             <img
               alt="picture-of-a-man3"
-              width="270"
-              height="260"
+              width="450"
+              height="460"
               src="images/main-page/crewprofile4.jpg"
             />
             <h4>John Doe</h4>
@@ -403,7 +406,7 @@
         </div>
       </section>
 
-      <section class="section-clients">
+      <section class="section-clients mobile-wraper">
         <h2>Nasi klienci</h2>
         <div class="section-clients__logos">
           <svg class="section-clients__icons" width="170px" height="92px">
@@ -428,7 +431,7 @@
       </section>
     </main>
 
-    <footer class="section-foot">
+    <footer class="section-foot mobile-wraper">
       <div class="foot-logo-contact">
         <a href="./index.html" class="foot-logo-contact__logo-link"
           ><span class="foot-logo-contact__logo-color">Web</span>Studio</a
@@ -508,17 +511,19 @@
               placeholder="E-mail"
             />
           </label>
-          <button type="submit" class="foot-newsletter__button">
-            <b>Zapisz się</b>
-            <svg
-              class="foot-newsletter__button--icon-send"
-              height="24px"
-              width="24px"
-            >
-              <use href="./images/svg/icons.svg#icon-send"></use>
-            </svg>
-          </button>
         </form>
+      </div>
+      <div class="mobile-wraper">
+        <button type="submit" class="foot-newsletter__button">
+          <b>Zapisz się</b>
+          <svg
+            class="foot-newsletter__button--icon-send"
+            height="24px"
+            width="24px"
+          >
+            <use href="./images/svg/icons.svg#icon-send"></use>
+          </svg>
+        </button>
       </div>
     </footer>
 
@@ -607,8 +612,6 @@
         </form>
       </div>
     </div>
-
-    
 
     <script src="./js/modal.js"></script>
     <script defer src="./js/mobile-menu.js"></script>
