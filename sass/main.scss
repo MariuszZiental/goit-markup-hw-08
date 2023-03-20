@@ -18,6 +18,8 @@
 
 @import "components/__portfolio";
 
+@import "components/__mobile-side";
+
 
 * {
   box-sizing: border-box;
@@ -72,7 +74,7 @@ h4 {
   text-decoration: solid;
 }
 
-.container {
+.wraper {
   margin: 0px auto;
   max-width: 1200px;
 }
