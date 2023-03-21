@@ -16,7 +16,15 @@
     display: flex;
     flex-direction: column;
   }
+
+  @media (min-width: 1024px) {
+    .section-crew__list-of-members {
+      display: flex;
+      flex-direction: row;
+    }
+  }
 }
+
 
 
   .member-profile {
@@ -52,8 +60,3 @@
       }
     }
   }
-
-  .member-profile-mobile {
-  }
-
-  

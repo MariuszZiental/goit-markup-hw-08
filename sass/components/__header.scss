@@ -31,7 +31,7 @@
 /*   Navigation links   */
 
 .navigation-links {
-  display: flex;
+  display: none;
   flex-direction: row;
   align-items: flex-end;
   column-gap: 46px;
@@ -74,10 +74,16 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .navigation-links {
+    display: flex;
+  }
+}
+
 /*   Contact links   */
 
 .contact-links {
-  display: flex;
+  display: none;
   padding: 0px 227px;
   column-gap: 46px;
   font-weight: 500;
@@ -104,7 +110,7 @@
       fill: $brand-color;
     }
     .contact-links__contact-link--icon {
-      display: inline-flex;
+      display: flex;
       flex-direction: row;
       margin-right: 10px;
       height: 30px;
@@ -114,3 +120,98 @@
     }
   }
 }
+@media (min-width: 1024px) {
+  .contact-links {
+    display: flex;
+  }
+}
+
+
+
+
+/* menu burger */
+
+.mobile-side .container {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.menu {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@media (max-width: 767px) {
+  .menu {
+    display: flex;
+  }
+}
+.menu .navigation-links__top-link {
+  padding: 10px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.menu .navigation-links__top-link {
+  padding: 10px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.menu .navigation-links__top-link:hover,
+.menu .navigation-links__top-link:focus {
+  text-decoration: underline;
+}
+
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+/*  Rozwijane Menu - zmien display na flex  */
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: -50%;
+  width: 50vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: $brand-color;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: black;
+}
+
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+
