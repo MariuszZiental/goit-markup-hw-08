@@ -16,27 +16,35 @@
   .section-advanteges__list-of-blocks {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
   }
 }
 
 .section-advanteges__block {
   margin: 15px;
-  width: 270px;
+  width: 450px;
 
   .section-advantages__image {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 120px;
-    width: 270px;
+    width: 450px;
     background-color: $our-crew-background;
 
     .section-advantages__image--svg {
       height: 70px;
       width: 70px;
     }
+  }
+  @media (min-width: 1024px) {
+    .section-advantages__image {
+      width: 270px;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .section-advanteges__block {
+    margin: 15px;
+    width: 270px;
   }
 }

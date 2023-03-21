@@ -7,6 +7,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin: auto;
 
     .section-clients__icons {
       display: flex;
@@ -24,6 +25,13 @@
     .section-clients__icons:hover {
       fill: $brand-color;
       border-color: $brand-color;
+    }
+  }
+  @media (min-width: 1024px) {
+    .section-clients__logos {
+      display: flex;
+      flex-direction: row;
+      width: 1200px;
     }
   }
 }

@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  width: 1600px;
   background: $our-crew-background;
 
   & li {
@@ -12,7 +13,7 @@
     align-items: center;
   }
 
-.section-crew__list-of-members {
+  .section-crew__list-of-members {
     display: flex;
     flex-direction: column;
   }
@@ -25,38 +26,44 @@
   }
 }
 
+.member-profile {
+  text-align: center;
+  margin: 15px;
+  font-size: 16px;
+  line-height: 1.37em;
+  letter-spacing: 0.03em;
+  width: 450px;
+  background: $logo-white-font-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 
+  .member-profile__caption {
+    margin-bottom: 30px;
+  }
 
-  .member-profile {
-    text-align: center;
-    margin: 15px;
-    font-size: 16px;
-    line-height: 1.37em;
-    letter-spacing: 0.03em;
-    width: 450px;
-    background: $logo-white-font-color;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+  .member-profile__icons-media {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+    fill: $icon-color;
+    @extend %transition;
 
-    .member-profile__caption {
-      margin-bottom: 30px;
+    &:hover {
+      background-color: $brand-color;
+      fill: $logo-white-font-color;
     }
-
-    .member-profile__icons-media {
-      display: flex;
-      align-items: center;
-      cursor: pointer;
-      border-radius: 50%;
-      fill: $icon-color;
-      @extend %transition;
-
-      &:hover {
-        background-color: $brand-color;
-        fill: $logo-white-font-color;
-      }
-      .member-profile__icons--svg-media {
-        padding: 11px;
-      }
+    .member-profile__icons--svg-media {
+      padding: 11px;
     }
   }
+}
+
+@media (min-width: 1024px) {
+  .member-profile {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+  }
+}
