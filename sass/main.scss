@@ -65,9 +65,17 @@ main {
     justify-content: center;
     align-items: center;
     width: 1600px;
-    
     margin-left: 200px;
     margin-right: 200px;
+  }
+}
+
+footer {
+
+}
+@media (min-width: 1024px) {
+  footer {
+    
   }
 }
 
@@ -138,8 +146,7 @@ h4 {
 @media (min-width: 1024px) {
   .mobile-wraper {
     display: flex;
-    
-    margin: auto;
+    width: 1600px;
   }
 }
 

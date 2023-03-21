@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  width: 1600px;
+  width: 480px;
   background: $our-crew-background;
 
   & li {
@@ -25,6 +25,13 @@
     }
   }
 }
+@media (min-width: 1024px) {
+    .section-crew {
+      display: flex;
+      flex-direction: row;
+      width: 1600px;
+    }
+  }
 
 .member-profile {
   text-align: center;
@@ -59,7 +66,6 @@
     }
   }
 }
-
 @media (min-width: 1024px) {
   .member-profile {
     display: flex;
