@@ -4,21 +4,19 @@
   width: 1200px;
   margin: 0 auto;
 
-  
   .section-workscope__list {
-    display: none;
-    flex-direction: row;
-    column-gap: 30px;
+    display: flex;
 
     @each $workscope in workscope__computers, workscope__mobile,
       workscope__graphic
     {
       .#{$workscope}--image {
-        display: none;
+        display: flex;
         flex-direction: column;
         justify-content: flex-end;
         width: 370px;
         height: 294px;
+        margin: 15px;
         background-image: url("../images/main-page/#{$workscope}.jpg");
         background-repeat: no-repeat;
         background-position: center;
@@ -26,24 +24,17 @@
       }
 
       .section-workscope__gradient {
-        display: none;
-        flex-direction: row;
+        display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
         height: 70px;
+        text-transform: uppercase;
         color: $logo-white-font-color;
         background-image: linear-gradient(
           to bottom,
           rgba(47, 48, 58, 0.8),
           rgba(47, 48, 58, 0.8)
         );
-        & p {
-          display: none;
-          flex-direction: row;
-          align-items: center;
-          text-transform: uppercase;
-        }
       }
     }
   }
@@ -54,3 +45,4 @@
       display: flex;
     }
   }
+
