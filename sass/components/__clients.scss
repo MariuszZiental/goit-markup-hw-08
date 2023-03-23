@@ -22,7 +22,7 @@
       @extend %transition;
     }
 
-    .section-clients__icons:hover {
+    .section-clients__logos--icons:hover {
       fill: $brand-color;
       border-color: $brand-color;
     }
@@ -35,7 +35,6 @@
       width: 1200px;
     }
   }
-  
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .section-clients__logos {

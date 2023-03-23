@@ -26,12 +26,10 @@
   }
 }
 @media (min-width: 1200px) {
-    .section-crew {
-      display: flex;
-      flex-direction: row;
-      width: 1600px;
-    }
+  .section-crew {
+    width: 1600px;
   }
+}
 
 .member-profile {
   text-align: center;
