@@ -9,7 +9,7 @@
     align-items: center;
     margin: auto;
 
-    .section-clients__icons {
+    .section-clients__logos--icons {
       display: flex;
       flex-wrap: wrap;
       margin: 15px;
@@ -27,11 +27,20 @@
       border-color: $brand-color;
     }
   }
-  @media (min-width: 1024px) {
+  
+  @media (min-width: 1200px) {
     .section-clients__logos {
       display: flex;
       flex-direction: row;
       width: 1200px;
+    }
+  }
+  
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section-clients__logos {
+    &--icons {
+      flex-basis: calc((100% - 60px) / 3);
     }
   }
 }

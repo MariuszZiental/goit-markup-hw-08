@@ -258,7 +258,7 @@
 
   -->
 
-      <section class="section-crew  mobile-wraper">
+      <section class="section-crew mobile-wraper">
         <h2>Nasz zespół</h2>
 
         <div class="section-crew__list-of-members">
@@ -507,22 +507,46 @@
       <section class="section-clients">
         <h2>Nasi klienci</h2>
         <div class="section-clients__logos">
-          <svg class="section-clients__icons" width="170px" height="92px">
+          <svg
+            class="section-clients__logos--icons"
+            width="170px"
+            height="92px"
+          >
             <use href="./images/svg/icons.svg#icon-client-1"></use>
           </svg>
-          <svg class="section-clients__icons" width="170px" height="92px">
+          <svg
+            class="section-clients__logos--icons"
+            width="170px"
+            height="92px"
+          >
             <use href="./images/svg/icons.svg#icon-client-2"></use>
           </svg>
-          <svg class="section-clients__icons" width="170px" height="92px">
+          <svg
+            class="section-clients__logos--icons"
+            width="170px"
+            height="92px"
+          >
             <use href="./images/svg/icons.svg#icon-client-3"></use>
           </svg>
-          <svg class="section-clients__icons" width="170px" height="92px">
+          <svg
+            class="section-clients__logos--icons"
+            width="170px"
+            height="92px"
+          >
             <use href="./images/svg/icons.svg#icon-client-4"></use>
           </svg>
-          <svg class="section-clients__icons" width="170px" height="92px">
+          <svg
+            class="section-clients__logos--icons"
+            width="170px"
+            height="92px"
+          >
             <use href="./images/svg/icons.svg#icon-client-5"></use>
           </svg>
-          <svg class="section-clients__icons" width="170px" height="92px">
+          <svg
+            class="section-clients__logos--icons"
+            width="170px"
+            height="92px"
+          >
             <use href="./images/svg/icons.svg#icon-client-6"></use>
           </svg>
         </div>
@@ -545,7 +569,7 @@
    Footer start
 
   -->
-    <footer class="section-foot mobile-wraper">
+    <footer class="section-footer">
       <div class="foot-logo-contact">
         <a href="./index.html" class="foot-logo-contact__logo-link"
           ><span class="foot-logo-contact__logo-color">Web</span>Studio</a
@@ -568,50 +592,52 @@
         </address>
       </div>
       <div class="foot-join-us">
-        <p><b>dołącz do nas</b></p>
-        <ul>
-          <li class="foot-join-us__footer-icons">
-            <div>
+        <div>
+          <p><b>dołącz do nas</b></p>
+          <ul>
+            <li class="foot-join-us__footer-icons">
+              <div>
+                <svg
+                  class="foot-join-us__footer-icons--svg-media"
+                  height="44px"
+                  width="44px"
+                >
+                  <use href="./images/svg/icons.svg#icon-instagram"></use>
+                </svg>
+              </div>
+            </li>
+
+            <li class="foot-join-us__footer-icons">
               <svg
                 class="foot-join-us__footer-icons--svg-media"
                 height="44px"
                 width="44px"
               >
-                <use href="./images/svg/icons.svg#icon-instagram"></use>
+                <use href="./images/svg/icons.svg#icon-twitter"></use>
               </svg>
-            </div>
-          </li>
+            </li>
 
-          <li class="foot-join-us__footer-icons">
-            <svg
-              class="foot-join-us__footer-icons--svg-media"
-              height="44px"
-              width="44px"
-            >
-              <use href="./images/svg/icons.svg#icon-twitter"></use>
-            </svg>
-          </li>
+            <li class="foot-join-us__footer-icons">
+              <svg
+                class="foot-join-us__footer-icons--svg-media"
+                height="44px"
+                width="44px"
+              >
+                <use href="./images/svg/icons.svg#icon-facebook"></use>
+              </svg>
+            </li>
 
-          <li class="foot-join-us__footer-icons">
-            <svg
-              class="foot-join-us__footer-icons--svg-media"
-              height="44px"
-              width="44px"
-            >
-              <use href="./images/svg/icons.svg#icon-facebook"></use>
-            </svg>
-          </li>
-
-          <li class="foot-join-us__footer-icons">
-            <svg
-              class="foot-join-us__footer-icons--svg-media"
-              height="44px"
-              width="44px"
-            >
-              <use href="./images/svg/icons.svg#icon-linkedin"></use>
-            </svg>
-          </li>
-        </ul>
+            <li class="foot-join-us__footer-icons">
+              <svg
+                class="foot-join-us__footer-icons--svg-media"
+                height="44px"
+                width="44px"
+              >
+                <use href="./images/svg/icons.svg#icon-linkedin"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <div class="foot-newsletter">
@@ -627,11 +653,11 @@
           </label>
         </form>
       </div>
-      <div class="mobile-wraper">
-        <button type="submit" class="foot-newsletter__button">
+      <div class="foot-newsletter__button">
+        <button type="submit" class="button__item">
           <b>Zapisz się</b>
           <svg
-            class="foot-newsletter__button--icon-send"
+            class="button__item--icon-send"
             height="24px"
             width="24px"
           >

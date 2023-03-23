@@ -74,7 +74,7 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .navigation-links {
     display: flex;
   }
@@ -120,7 +120,7 @@
     }
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .contact-links {
     display: flex;
   }
@@ -148,6 +148,11 @@
 @media (max-width: 767px) {
   .menu {
     display: flex;
+  }
+}
+@media (min-width: 768px) {
+  .menu {
+    display: none;
   }
 }
 .menu .navigation-links__top-link {
@@ -208,10 +213,6 @@
 }
 
 
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: none;
-  }
-}
+
 
 
