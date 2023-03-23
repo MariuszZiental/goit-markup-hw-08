@@ -126,9 +126,6 @@
   }
 }
 
-
-
-
 /* menu burger */
 
 .mobile-side .container {
@@ -187,6 +184,11 @@
   border-radius: 50%;
   outline: none;
 }
+@media (min-width: 481px) {
+  .menu-toggle {
+    display: none;
+  }
+}
 
 /*  Rozwijane Menu - zmien display na flex  */
 
@@ -211,8 +213,3 @@
   right: 16px;
   color: black;
 }
-
-
-
-
-
