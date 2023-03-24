@@ -5,7 +5,7 @@
   margin: auto;
   width: 480px;
   height: 400px;
-  padding: 118px 57px 118px 57px;
+  
   background: $black-box-color;
   background-image: linear-gradient(
       to bottom,
@@ -17,6 +17,7 @@
   background-position: center;
   background-size: cover;
   width: 100%;
+  
 
   .section-heading__content {
     display: flex;

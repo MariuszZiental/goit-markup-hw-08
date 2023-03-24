@@ -45,38 +45,37 @@
           >
         </div>
 
-        <div class="mobile-side">
-          <div class="container">
-            <button
-              class="menu-toggle js-open-menu"
-              aria-expanded="false"
-              aria-controls="mobile-menu"
+        <div class="mobile-side container">
+          <button
+            type="button"
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                width="24"
-                height="24"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </button>
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
 
-            <nav class="navigation-links">
-              <a class="navigation-links__top-link active" href="./index.html"
-                >Agencja</a
-              >
-              <a class="navigation-links__top-link" href="./portfolio.html"
-                >Portfolio</a
-              >
-              <a class="navigation-links__top-link" href="./kontakt">Kontakt</a>
-            </nav>
-          </div>
+          <nav class="navigation-links">
+            <a class="navigation-links__top-link active" href="./index.html"
+              >Agencja</a
+            >
+            <a class="navigation-links__top-link" href="./portfolio.html"
+              >Portfolio</a
+            >
+            <a class="navigation-links__top-link" href="./kontakt">Kontakt</a>
+          </nav>
         </div>
 
         <div class="contact-links">
@@ -656,11 +655,7 @@
       <div class="foot-newsletter__button">
         <button type="submit" class="button__item">
           <b>Zapisz się</b>
-          <svg
-            class="button__item--icon-send"
-            height="24px"
-            width="24px"
-          >
+          <svg class="button__item--icon-send" height="24px" width="24px">
             <use href="./images/svg/icons.svg#icon-send"></use>
           </svg>
         </button>
@@ -775,8 +770,8 @@
 
   -->
 
-    <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
+    <div class="menu-container js-menu-container is-hidden" id="mobile-menu">
+      <button type="button" class="menu-toggle close-menu">
         <svg
           fill="currentColor"
           viewBox="0 0 20 20"
