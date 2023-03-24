@@ -1,6 +1,7 @@
 .section-clients {
   display: flex;
   flex-direction: column;
+  width: 480px;
 
   .section-clients__logos {
     display: flex;
@@ -21,25 +22,25 @@
       fill: $icon-color;
       @extend %transition;
     }
-
     .section-clients__logos--icons:hover {
       fill: $brand-color;
       border-color: $brand-color;
     }
   }
-  
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     .section-clients__logos {
-      display: flex;
-      flex-direction: row;
-      width: 1200px;
+      &--icons {
+        flex-basis: calc((100% - 60px) / 3);
+        width: 100%;
+      }
     }
   }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .section-clients__logos {
-    &--icons:hover {
-      flex-basis: calc((100% - 60px) / 3);
+  @media screen and (min-width: 1200px) {
+    .section-clients__logos {
+      &--icons {
+        flex-direction: row;
+        width: 100%;
+      }
     }
   }
 }

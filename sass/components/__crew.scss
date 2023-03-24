@@ -25,7 +25,7 @@
     }
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: $desktop-breakpoint) {
   .section-crew {
     width: 1600px;
   }

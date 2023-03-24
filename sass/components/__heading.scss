@@ -3,47 +3,56 @@
   flex-direction: column;
   align-items: center;
   margin: auto;
+
   width: 480px;
   height: 400px;
-  
-  background: $black-box-color;
   background-image: linear-gradient(
       to bottom,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-  url("../images/main-page/Baner-mobile.jpg");
+    url("../images/main-page/baner.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 480px 400px;
+  background: $black-box-color;
   width: 100%;
-  
+}
+@media (min-device-pixel-ratio: 3),
+  (-webkit-min-device-pixel-ratio: 3),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .section-heading {
+    background-image: url('../images/main-page/baner@3x.jpg');
+  }
+}
 
-  .section-heading__content {
+.section-heading__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 480px;
+  margin: auto;
+
+  .section-heading__content--text {
     display: flex;
-    flex-wrap:wrap;
-    justify-content: center;
-    align-items: center;
-    width: 365px;
+    
+  }
 
-    .section-heading__content--text {
-      display: flex;
-    }
-
-    .section-heading__content--button {
-      display: flex;
-      padding: 10px 41px 10px 42px;
-      letter-spacing: 0.06em;
-      border-radius: 4px;
-      border: none;
-      font-size: 16px;
-      line-height: 1.87em;
-      background-color: $brand-color;
-      color: $logo-white-font-color;
-      cursor: pointer;
-      &:hover {
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-      }
+  .section-heading__content--button {
+    display: flex;
+    padding: 10px 41px 10px 42px;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+    line-height: 1.87em;
+    background-color: $brand-color;
+    color: $logo-white-font-color;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     }
   }
 }

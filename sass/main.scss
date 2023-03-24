@@ -32,28 +32,34 @@ body {
   line-height: 16px;
   min-height: 100%;
   margin: 0 auto;
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  body {
-    width: 480px;
+
+  @media (max-width: 767px) {
+    & {
+      justify-content: center;
+      align-items: center;
+      width: 480px;
+    }
   }
-}
-@media (min-width: 768px) and (max-width: 1199px) {
-  body {
-    width: 768px;
+  @media (min-width: 768px) and (max-width: 1199px) {
+    body {
+      justify-content: center;
+      align-items: center;
+      width: 768px;
+    }
   }
-}
-@media (min-width: 1200px) {
-  body {
-    justify-content: center;
-    align-items: center;
-    width: 1600px;
+  @media (min-width: 1200px) {
+    body {
+      justify-content: center;
+      align-items: center;
+      width: 1600px;
+    }
   }
 }
 
 header {
   display: flex;
   flex-direction: row;
+  margin: auto;
   width: 480px;
 }
 @media (min-width: 1200px) {
@@ -71,14 +77,13 @@ main {
   align-items: center;
   margin: auto;
   width: 480px;
-}
-@media (min-width: 1200px) {
-  main {
+@media (min-width: $desktop-breakpoint) {
+  & {
     width: 1600px;
-    margin-left: 200px;
-    margin-right: 200px;
   }
 }
+}
+
 
 footer {
   margin: auto;
@@ -92,26 +97,26 @@ section {
   display: flex;
   padding-top: $padding-between-mobile;
   padding-bottom: $padding-between-mobile;
-}
 
-@media screen and (min-width: 320px) {
-  section {
-    width: 480px;
-    background-color: blue;
+  @media screen and (min-width: $mobile-breakpoint) {
+    & {
+      width: 480px;
+      background-color: blue;
+    }
   }
-}
-@media screen and (min-width: 768px) {
-  section {
-    width: 768px;
-    background-color: aqua;
+  @media screen and (min-width: $tablet-breakpoint) {
+    & {
+      width: 768px;
+      background-color: aqua;
+    }
   }
-}
-@media (min-width: 1200px) {
-  section {
-    width: 100%;
-    padding-top: $padding-between;
-    padding-bottom: $padding-between;
-    background-color: violet;
+  @media (min-width: $desktop-breakpoint) {
+    & {
+      width: 100%;
+      padding-top: $padding-between;
+      padding-bottom: $padding-between;
+      background-color: violet;
+    }
   }
 }
 
@@ -142,7 +147,7 @@ h3 {
   text-decoration: solid;
   padding-top: 20px;
 }
-@media (min-width: 1200px) {
+@media (min-width: $desktop-breakpoint) {
   h3 {
     text-align: left;
   }
@@ -159,19 +164,7 @@ h4 {
   max-width: 1200px;
 }
 
-.mobile-wraper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 480px;
-  margin: auto;
-}
-@media (min-width: 1200px) {
-  .mobile-wraper {
-    display: flex;
-    width: 1600px;
-  }
-}
+
 
 .container {
   min-width: 320px;

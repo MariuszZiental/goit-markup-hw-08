@@ -13,10 +13,11 @@
   align-items: center;
   margin: auto;
 }
-@media (min-width: 1200px) {
+@media screen and (min-width: $desktop-breakpoint) {
   .section-advanteges__list-of-blocks {
     display: flex;
     flex-direction: row;
+    width: 100%;
   }
 }
 
