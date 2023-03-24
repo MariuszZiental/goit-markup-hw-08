@@ -5,7 +5,8 @@
   align-items: center;
   height: 80px;
   border-bottom: 1px solid $navbar-border-color;
-  margin: 0 auto;
+  margin: auto;
+  padding-left: $padding-left-right; 
 }
 
 /*   Logo   */
