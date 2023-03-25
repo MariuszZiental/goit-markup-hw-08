@@ -5,7 +5,7 @@
   list-style: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-breakpoint) {
   .menu {
     display: none;
   }
@@ -20,6 +20,7 @@
 }
 
 .menu-toggle {
+  display: flex;
   min-height: 40px;
   min-width: 40px;
   display: flex;
@@ -40,11 +41,10 @@
 .menu-toggle:focus {
   color: $logo-white-font-color;
   background-color: $brand-color;
-
-  @media (min-width: 768px) {
-    & {
-      display: none;
-    }
+}
+@media (min-width: $tablet-breakpoint) {
+  .menu-toggle {
+    display: none;
   }
 }
 
@@ -60,7 +60,7 @@
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 }
-@media (min-width: 768px) {
+@media (min-width: $tablet-breakpoint) {
   .menu-container {
     display: none;
     justify-content: center;

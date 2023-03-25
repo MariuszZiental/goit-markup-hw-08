@@ -4,14 +4,19 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid $navbar-border-color;
-  margin: auto;
+}
+@media (min-width: $desktop-breakpoint) {
+  .header-items {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
 
 /*   Logo   */
 
 .logo a {
   display: flex;
-  margin-left: 15px;
 }
 
 .logo-link {
@@ -37,7 +42,6 @@
   font-weight: 500;
   letter-spacing: 0.02em;
   margin: 0;
-  padding-left: 93px;
 
   & .active::after {
     position: absolute;
@@ -76,6 +80,8 @@
 @media (min-width: $desktop-breakpoint) {
   .navigation-links {
     display: flex;
+    padding-left: $padding-between;
+    padding-right: 350px;
   }
 }
 
@@ -83,7 +89,6 @@
 
 .contact-links {
   display: none;
-  padding: 0px 227px;
   column-gap: 46px;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -111,7 +116,6 @@
     .contact-links__contact-link--icon {
       display: flex;
       flex-direction: row;
-      margin-right: 10px;
       height: 30px;
       width: 20px;
       fill: $main-font-color;

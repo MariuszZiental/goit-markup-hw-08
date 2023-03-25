@@ -1,10 +1,10 @@
 .section-footer {
   display: flex;
   flex-direction: column;
-  width: 480px;
+  width: 100%;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-breakpoint) {
   .section-footer {
     flex-direction: row;
     justify-content: space-between;
@@ -31,7 +31,7 @@
     display: flex;
     justify-content: center;
   }
-  @media (min-width: 1200px) {
+  @media (min-width: $desktop-breakpoint) {
     p a {
       justify-content: flex-start;
       align-items: flex-start;
@@ -68,7 +68,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-breakpoint) {
   .foot-logo-contact {
     justify-content: flex-start;
     align-items: flex-start;
@@ -91,7 +91,7 @@
     justify-content: center;
     align-items: center;
   }
-  @media (min-width: 1200px) {
+  @media (min-width: $desktop-breakpoint) {
     p {
       justify-content: flex-start;
       padding-bottom: 20px;
@@ -117,7 +117,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-breakpoint) {
   .foot-join-us {
     padding-bottom: 40px;
     padding-left: 70px;
@@ -134,14 +134,13 @@
   background-color: $black-box-color;
 
   & p {
-    display: flex;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
     padding-bottom: 20px;
     color: $logo-white-font-color;
   }
-  @media (min-width: 1200px) {
+  @media (min-width: $desktop-breakpoint) {
     p {
       justify-content: flex-start;
     }
@@ -166,7 +165,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-breakpoint) {
   .foot-newsletter {
     padding-left: 78px;
     padding-bottom: 48px;
@@ -204,7 +203,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-breakpoint) {
   .foot-newsletter__button {
     margin-top: 48px;
     margin-bottom: 34px;

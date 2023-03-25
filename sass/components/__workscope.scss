@@ -3,11 +3,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
   width: 100%;
 
   .section-workscope__list {
     display: flex;
+    column-gap: 30px;
 
     @each $workscope in workscope__computers, workscope__mobile,
       workscope__graphic
@@ -18,7 +18,6 @@
         justify-content: flex-end;
         width: 370px;
         height: 294px;
-        margin: 15px;
         background-image: url("../images/main-page/#{$workscope}.jpg");
         background-repeat: no-repeat;
         background-position: center;
@@ -42,9 +41,8 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-breakpoint) {
   .section-workscope {
     display: flex;
-    margin-left: 200px auto;
   }
 }
