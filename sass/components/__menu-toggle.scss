@@ -50,14 +50,14 @@
 
 /*  Rozwijane Menu - zmien display na flex  */
 
+
 .menu-container {
-  position: absolute;
-  top: 0%;
-  left: -50%;
-  width: 480px;
-  height: 796px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
   padding: 32px;
-  margin-left: 260px;
   background-color: $brand-color;
   z-index: 998;
   transform: translateX(100%);
@@ -65,11 +65,12 @@
 }
 @media (min-width: 768px) {
   .menu-container {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
   }
 }
+
 
 .menu-container .menu-toggle {
   position: absolute;
