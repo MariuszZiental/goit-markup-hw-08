@@ -19,7 +19,6 @@
 }
 .menu .navigation-links__top-link {
   padding: 10px;
-  color: red;
   text-decoration: none;
 }
 
@@ -41,18 +40,18 @@
   outline: none;
   cursor: pointer;
   @extend %transition;
-  
 }
 .menu-toggle:hover {
   color: $brand-color;
 }
 .menu-toggle:focus {
-    color: $logo-white-font-color;
+  color: $logo-white-font-color;
   background-color: $brand-color;
-}
-@media (min-width: 768px) {
-  .menu-toggle {
-    display: none;
+
+  @media (min-width: 768px) {
+    & {
+      display: none;
+    }
   }
 }
 

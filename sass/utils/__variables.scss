@@ -1,4 +1,7 @@
 
+
+/*   Colors   */
+
 $main-font-color: #212121;
 $secondary-font-color: #757575;
 $brand-color: #2196f3;
@@ -12,21 +15,6 @@ $navbar-border-color: #ececec;
 $footer-logo-color: #2196f3;
 $icon-color: #afb1b8;
 
-%transition {
-   transition-property: fill, color, background-color, border-color, transform, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0s;
-}
-
-$padding-between: 94px;
-
-$padding-between-mobile: 60px;
-
-$padding-left-right: 215px;
-
-$cursor-pointer: pointer;
-
 
 /*   Breakpoints   */
 
@@ -35,3 +23,24 @@ $mobile-breakpoint: 480px;
 $tablet-breakpoint: 768px;
 
 $desktop-breakpoint: 1200px;
+
+
+/*   Spaces   */
+
+$padding-between: 94px;
+
+$padding-between-mobile: 60px;
+
+$padding-left-right: 215px;
+
+
+/*   Other atributes   */
+
+$cursor-pointer: pointer;
+
+%transition {
+   transition-property: fill, color, background-color, border-color, transform, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0s;
+}

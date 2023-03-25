@@ -4,7 +4,7 @@
 
 @import "components/__heading";
 
-@import "components/__advanteges";
+@import "components/__advantages";
 
 @import "components/__workscope";
 
@@ -59,7 +59,7 @@ body {
 header {
   display: flex;
   flex-direction: row;
-  margin: auto;
+  margin: 0 auto;
   width: 480px;
 }
 @media (min-width: 1200px) {
@@ -75,15 +75,14 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  margin: 0 auto;
   width: 480px;
-@media (min-width: $desktop-breakpoint) {
-  & {
-    width: 1600px;
+  @media (min-width: $desktop-breakpoint) {
+    & {
+      width: 1600px;
+    }
   }
 }
-}
-
 
 footer {
   margin: auto;
@@ -97,23 +96,18 @@ section {
   display: flex;
   padding-top: $padding-between-mobile;
   padding-bottom: $padding-between-mobile;
+  background-color: blue;
+  margin: 0 auto;
+  width: 100%;
 
-  @media screen and (min-width: $mobile-breakpoint) {
+  @media (min-width: $tablet-breakpoint) {
     & {
-      width: 480px;
-      background-color: blue;
-      z-index: 10;
-    }
-  }
-  @media screen and (min-width: $tablet-breakpoint) {
-    & {
-      width: 768px;
+     
       background-color: aqua;
     }
   }
   @media (min-width: $desktop-breakpoint) {
     & {
-      width: 100%;
       padding-top: $padding-between;
       padding-bottom: $padding-between;
       background-color: violet;
@@ -164,8 +158,6 @@ h4 {
   margin: 0px auto;
   max-width: 1200px;
 }
-
-
 
 .container {
   min-width: 320px;
