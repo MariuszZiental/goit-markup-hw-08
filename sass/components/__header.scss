@@ -3,7 +3,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
   border-bottom: 1px solid $navbar-border-color;
   margin: auto;
 }
@@ -74,7 +73,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-breakpoint) {
   .navigation-links {
     display: flex;
   }
@@ -120,8 +119,12 @@
     }
   }
 }
-@media (min-width: 1200px) {
+
+@media (min-width: $desktop-breakpoint) {
   .contact-links {
     display: flex;
   }
 }
+
+/*   Menu Toggle   */
+

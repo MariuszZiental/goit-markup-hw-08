@@ -3,6 +3,7 @@
   flex-direction: column;
   width: 480px;
 }
+
 @media (min-width: 1200px) {
   .section-footer {
     flex-direction: row;
@@ -66,6 +67,7 @@
     }
   }
 }
+
 @media (min-width: 1200px) {
   .foot-logo-contact {
     justify-content: flex-start;
@@ -114,6 +116,7 @@
     }
   }
 }
+
 @media (min-width: 1200px) {
   .foot-join-us {
     padding-bottom: 40px;
@@ -162,6 +165,7 @@
     }
   }
 }
+
 @media (min-width: 1200px) {
   .foot-newsletter {
     padding-left: 78px;
@@ -175,7 +179,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 480px;
   margin-top: 20px;
 
   .button__item {
@@ -200,10 +203,11 @@
     }
   }
 }
+
 @media (min-width: 1200px) {
   .foot-newsletter__button {
-    width: 200px;
-    height: 50px;
+  
+   
     margin-top: 48px;
     margin-bottom: 34px;
   }

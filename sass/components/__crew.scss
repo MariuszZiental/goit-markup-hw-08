@@ -3,8 +3,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  width: 480px;
   background: $our-crew-background;
 
   & li {
@@ -25,6 +23,7 @@
     }
   }
 }
+
 @media (min-width: $desktop-breakpoint) {
   .section-crew {
     width: 1600px;
@@ -65,6 +64,7 @@
     }
   }
 }
+
 @media (min-width: 1200px) {
   .member-profile {
     display: flex;

@@ -45,38 +45,15 @@
           >
         </div>
 
-        <div class="container">
-          <button
-            type="button"
-            class="menu-toggle js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
+        <nav class="navigation-links">
+          <a class="navigation-links__top-link active" href="./index.html"
+            >Agencja</a
           >
-            <svg
-              width="24"
-              height="24"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
-
-          <nav class="js-menu-container navigation-links">
-            <a class="navigation-links__top-link active" href="./index.html"
-              >Agencja</a
-            >
-            <a class="navigation-links__top-link" href="./portfolio.html"
-              >Portfolio</a
-            >
-            <a class="navigation-links__top-link" href="./kontakt">Kontakt</a>
-          </nav>
-        </div>
+          <a class="navigation-links__top-link" href="./portfolio.html"
+            >Portfolio</a
+          >
+          <a class="navigation-links__top-link" href="./kontakt">Kontakt</a>
+        </nav>
 
         <div class="contact-links">
           <div>
@@ -99,6 +76,28 @@
             >
           </div>
         </div>
+        <div class="menu-toggle">
+          <button
+            type="button"
+            class="js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
     <!--
@@ -117,440 +116,444 @@
    Section Heading start
 
   -->
-
-      <section class="section-heading">
-        <div class="section-heading__content mobile-wraper">
-          <div class="section-heading__content--text">
-            <h1>efektywne rozwiązania dla waszego biznesu</h1>
+      <div class="container">
+        <section class="section-heading">
+          <div class="container section-heading__content">
+            <div class="section-heading__content--text">
+              <h1>efektywne rozwiązania dla waszego biznesu</h1>
+            </div>
+            <div class="mobile-wraper">
+              <button
+                class="section-heading__content--button modal__button"
+                type="button"
+                data-modal-open
+              >
+                Zamów usługę
+              </button>
+            </div>
           </div>
-          <div class="mobile-wraper">
-            <button
-              class="section-heading__content--button modal__button"
-              type="button"
-              data-modal-open
-            >
-              Zamów usługę
-            </button>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <!--
+        <!--
 
    Section Heading end
 
   -->
 
-      <!--
+        <!--
 
    Section Advanteges start
 
   -->
 
-      <section class="section-advantages">
-        <div class="section-advantages__list-of-blocks">
-          <ul class="section-advantages__block">
-            <li class="section-advantages__image">
-              <svg class="section-advantages__image--svg">
-                <use href="./images/svg/icons.svg#icon-antenna"></use>
-              </svg>
-            </li>
-            <li>
-              <h3><b>LOREM IPSUM</b></h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-                arcu sem. Sed non sodales dui. Interdum et malesuada
-              </p>
-            </li>
-          </ul>
-          <ul class="section-advantages__block">
-            <li class="section-advantages__image">
-              <svg class="section-advantages__image--svg">
-                <use href="./images/svg/icons.svg#icon-clock"></use>
-              </svg>
-            </li>
-            <li>
-              <h3><b>LOREM IPSUM</b></h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-                arcu sem. Sed non sodales dui. Interdum et malesuada
-              </p>
-            </li>
-          </ul>
-          <ul class="section-advantages__block">
-            <li class="section-advantages__image">
-              <svg class="section-advantages__image--svg">
-                <use href="./images/svg/icons.svg#icon-diagram"></use>
-              </svg>
-            </li>
-            <li>
-              <h3><b>LOREM IPSUM</b></h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-                arcu sem. Sed non sodales dui. Interdum et malesuada
-              </p>
-            </li>
-          </ul>
+        <section class="section-advantages">
+          <div class="container section-advantages__list-of-blocks">
+            <ul class="section-advantages__block">
+              <li class="section-advantages__image">
+                <svg class="section-advantages__image--svg">
+                  <use href="./images/svg/icons.svg#icon-antenna"></use>
+                </svg>
+              </li>
+              <li>
+                <h3><b>LOREM IPSUM</b></h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                </p>
+              </li>
+            </ul>
+            <ul class="section-advantages__block">
+              <li class="section-advantages__image">
+                <svg class="section-advantages__image--svg">
+                  <use href="./images/svg/icons.svg#icon-clock"></use>
+                </svg>
+              </li>
+              <li>
+                <h3><b>LOREM IPSUM</b></h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                </p>
+              </li>
+            </ul>
+            <ul class="section-advantages__block">
+              <li class="section-advantages__image">
+                <svg class="section-advantages__image--svg">
+                  <use href="./images/svg/icons.svg#icon-diagram"></use>
+                </svg>
+              </li>
+              <li>
+                <h3><b>LOREM IPSUM</b></h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                </p>
+              </li>
+            </ul>
 
-          <ul class="section-advantages__block">
-            <li class="section-advantages__image">
-              <svg class="section-advantages__image--svg">
-                <use href="./images/svg/icons.svg#icon-antenna"></use>
-              </svg>
-            </li>
+            <ul class="section-advantages__block">
+              <li class="section-advantages__image">
+                <svg class="section-advantages__image--svg">
+                  <use href="./images/svg/icons.svg#icon-antenna"></use>
+                </svg>
+              </li>
 
-            <li>
-              <h3><b>LOREM IPSUM</b></h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-                arcu sem. Sed non sodales dui. Interdum et malesuada
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
+              <li>
+                <h3><b>LOREM IPSUM</b></h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
 
-      <!--
+        <!--
 
    Section Advanteges end
 
   -->
 
-      <!--
+        <!--
 
    Section Workscope start
 
   -->
 
-      <section class="section-workscope">
-        <h2>Czym się zajmujemy</h2>
-        <div class="section-workscope__list">
-          <div class="workscope__computers--image">
-            <div class="section-workscope__gradient">
-              <p>aplikacje komputerowe</p>
+        <section class="section-workscope">
+          <div class="container">
+            <h2>Czym się zajmujemy</h2>
+            <div class="section-workscope__list">
+              <div class="workscope__computers--image">
+                <div class="section-workscope__gradient">
+                  <p>aplikacje komputerowe</p>
+                </div>
+              </div>
+
+              <div class="workscope__mobile--image">
+                <div class="section-workscope__gradient">
+                  <p>aplikacje mobilne</p>
+                </div>
+              </div>
+
+              <div class="workscope__graphic--image">
+                <div class="section-workscope__gradient">
+                  <p>rozwiązania graficzne</p>
+                </div>
+              </div>
             </div>
           </div>
+        </section>
 
-          <div class="workscope__mobile--image">
-            <div class="section-workscope__gradient">
-              <p>aplikacje mobilne</p>
-            </div>
-          </div>
-
-          <div class="workscope__graphic--image">
-            <div class="section-workscope__gradient">
-              <p>rozwiązania graficzne</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--
+        <!--
 
    Section Workscope end
 
   -->
 
-      <!--
+        <!--
 
    Section Crew start
 
   -->
 
-      <section class="section-crew">
-        <h2>Nasz zespół</h2>
+        <section class="section-crew">
+          <h2>Nasz zespół</h2>
 
-        <div class="section-crew__list-of-members">
-          <div class="member-profile">
-            <img
-              alt="picture-of-a-man"
-              width="450"
-              height="460"
-              src="images/main-page/crewprofile1.jpg"
-            />
-            <h4>John Doe</h4>
-            <p class="member-profile__caption">Product Designer</p>
-            <ul>
-              <li>
-                <div class="member-profile__icons-media">
-                  <svg
-                    class="member-profile__icons--svg-media"
-                    width="44px"
-                    height="44px"
-                  >
-                    <use href="./images/svg/icons.svg#icon-instagram"></use>
-                  </svg>
-                </div>
-              </li>
-              <li>
-                <div class="member-profile__icons-media">
-                  <svg
-                    class="member-profile__icons--svg-media"
-                    width="44px"
-                    height="44px"
-                  >
-                    <use href="./images/svg/icons.svg#icon-twitter"></use>
-                  </svg>
-                </div>
-              </li>
-              <li>
-                <div class="member-profile__icons-media">
-                  <svg
-                    class="member-profile__icons--svg-media"
-                    width="44px"
-                    height="44px"
-                  >
-                    <use href="./images/svg/icons.svg#icon-facebook"></use>
-                  </svg>
-                </div>
-              </li>
+          <div class="container section-crew__list-of-members">
+            <div class="member-profile">
+              <img
+                alt="picture-of-a-man"
+                width="450"
+                height="460"
+                src="images/main-page/crewprofile1.jpg"
+              />
+              <h4>John Doe</h4>
+              <p class="member-profile__caption">Product Designer</p>
+              <ul>
+                <li>
+                  <div class="member-profile__icons-media">
+                    <svg
+                      class="member-profile__icons--svg-media"
+                      width="44px"
+                      height="44px"
+                    >
+                      <use href="./images/svg/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </div>
+                </li>
+                <li>
+                  <div class="member-profile__icons-media">
+                    <svg
+                      class="member-profile__icons--svg-media"
+                      width="44px"
+                      height="44px"
+                    >
+                      <use href="./images/svg/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </div>
+                </li>
+                <li>
+                  <div class="member-profile__icons-media">
+                    <svg
+                      class="member-profile__icons--svg-media"
+                      width="44px"
+                      height="44px"
+                    >
+                      <use href="./images/svg/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </div>
+                </li>
 
-              <li>
-                <div class="member-profile__icons-media">
-                  <svg
-                    class="member-profile__icons--svg-media"
-                    width="44px"
-                    height="44px"
-                  >
-                    <use href="./images/svg/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </div>
-              </li>
-            </ul>
+                <li>
+                  <div class="member-profile__icons-media">
+                    <svg
+                      class="member-profile__icons--svg-media"
+                      width="44px"
+                      height="44px"
+                    >
+                      <use href="./images/svg/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="member-profile">
+              <img
+                alt="picture-of-a-woman"
+                width="450"
+                height="460"
+                src="images/main-page/crewprofile2.jpg"
+              />
+              <h4>John Doe</h4>
+              <p class="member-profile__caption">Frontend Developer</p>
+              <ul>
+                <li>
+                  <div class="member-profile__icons-media">
+                    <svg
+                      class="member-profile__icons--svg-media"
+                      width="44px"
+                      height="44px"
+                    >
+                      <use href="./images/svg/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </div>
+                </li>
+                <li>
+                  <div class="member-profile__icons-media">
+                    <svg
+                      class="member-profile__icons--svg-media"
+                      width="44px"
+                      height="44px"
+                    >
+                      <use href="./images/svg/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </div>
+                </li>
+                <li>
+                  <div class="member-profile__icons-media">
+                    <svg
+                      class="member-profile__icons--svg-media"
+                      width="44px"
+                      height="44px"
+                    >
+                      <use href="./images/svg/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="member-profile__icons-media">
+                    <svg
+                      class="member-profile__icons--svg-media"
+                      width="44px"
+                      height="44px"
+                    >
+                      <use href="./images/svg/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="member-profile">
+              <img
+                alt="picture-of-a-man2"
+                width="450"
+                height="460"
+                src="images/main-page/crewprofile3.jpg"
+              />
+              <h4>John Doe</h4>
+              <p class="member-profile__caption">Marketing</p>
+              <ul>
+                <li>
+                  <div class="member-profile__icons-media">
+                    <svg
+                      class="member-profile__icons--svg-media"
+                      width="44px"
+                      height="44px"
+                    >
+                      <use href="./images/svg/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </div>
+                </li>
+                <li>
+                  <div class="member-profile__icons-media">
+                    <svg
+                      class="member-profile__icons--svg-media"
+                      width="44px"
+                      height="44px"
+                    >
+                      <use href="./images/svg/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </div>
+                </li>
+                <li>
+                  <div class="member-profile__icons-media">
+                    <svg
+                      class="member-profile__icons--svg-media"
+                      width="44px"
+                      height="44px"
+                    >
+                      <use href="./images/svg/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="member-profile__icons-media">
+                    <svg
+                      class="member-profile__icons--svg-media"
+                      width="44px"
+                      height="44px"
+                    >
+                      <use href="./images/svg/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="member-profile">
+              <img
+                alt="picture-of-a-man3"
+                width="450"
+                height="460"
+                src="images/main-page/crewprofile4.jpg"
+              />
+              <h4>John Doe</h4>
+              <p class="member-profile__caption">UI Designer</p>
+              <ul>
+                <li>
+                  <div class="member-profile__icons-media">
+                    <svg
+                      class="member-profile__icons--svg-media"
+                      width="44px"
+                      height="44px"
+                    >
+                      <use href="./images/svg/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </div>
+                </li>
+                <li>
+                  <div class="member-profile__icons-media">
+                    <svg
+                      class="member-profile__icons--svg-media"
+                      width="44px"
+                      height="44px"
+                    >
+                      <use href="./images/svg/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </div>
+                </li>
+                <li>
+                  <div class="member-profile__icons-media">
+                    <svg
+                      class="member-profile__icons--svg-media"
+                      width="44px"
+                      height="44px"
+                    >
+                      <use href="./images/svg/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="member-profile__icons-media">
+                    <svg
+                      class="member-profile__icons--svg-media"
+                      width="44px"
+                      height="44px"
+                    >
+                      <use href="./images/svg/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="member-profile">
-            <img
-              alt="picture-of-a-woman"
-              width="450"
-              height="460"
-              src="images/main-page/crewprofile2.jpg"
-            />
-            <h4>John Doe</h4>
-            <p class="member-profile__caption">Frontend Developer</p>
-            <ul>
-              <li>
-                <div class="member-profile__icons-media">
-                  <svg
-                    class="member-profile__icons--svg-media"
-                    width="44px"
-                    height="44px"
-                  >
-                    <use href="./images/svg/icons.svg#icon-instagram"></use>
-                  </svg>
-                </div>
-              </li>
-              <li>
-                <div class="member-profile__icons-media">
-                  <svg
-                    class="member-profile__icons--svg-media"
-                    width="44px"
-                    height="44px"
-                  >
-                    <use href="./images/svg/icons.svg#icon-twitter"></use>
-                  </svg>
-                </div>
-              </li>
-              <li>
-                <div class="member-profile__icons-media">
-                  <svg
-                    class="member-profile__icons--svg-media"
-                    width="44px"
-                    height="44px"
-                  >
-                    <use href="./images/svg/icons.svg#icon-facebook"></use>
-                  </svg>
-                </div>
-              </li>
+        </section>
 
-              <li>
-                <div class="member-profile__icons-media">
-                  <svg
-                    class="member-profile__icons--svg-media"
-                    width="44px"
-                    height="44px"
-                  >
-                    <use href="./images/svg/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="member-profile">
-            <img
-              alt="picture-of-a-man2"
-              width="450"
-              height="460"
-              src="images/main-page/crewprofile3.jpg"
-            />
-            <h4>John Doe</h4>
-            <p class="member-profile__caption">Marketing</p>
-            <ul>
-              <li>
-                <div class="member-profile__icons-media">
-                  <svg
-                    class="member-profile__icons--svg-media"
-                    width="44px"
-                    height="44px"
-                  >
-                    <use href="./images/svg/icons.svg#icon-instagram"></use>
-                  </svg>
-                </div>
-              </li>
-              <li>
-                <div class="member-profile__icons-media">
-                  <svg
-                    class="member-profile__icons--svg-media"
-                    width="44px"
-                    height="44px"
-                  >
-                    <use href="./images/svg/icons.svg#icon-twitter"></use>
-                  </svg>
-                </div>
-              </li>
-              <li>
-                <div class="member-profile__icons-media">
-                  <svg
-                    class="member-profile__icons--svg-media"
-                    width="44px"
-                    height="44px"
-                  >
-                    <use href="./images/svg/icons.svg#icon-facebook"></use>
-                  </svg>
-                </div>
-              </li>
-
-              <li>
-                <div class="member-profile__icons-media">
-                  <svg
-                    class="member-profile__icons--svg-media"
-                    width="44px"
-                    height="44px"
-                  >
-                    <use href="./images/svg/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="member-profile">
-            <img
-              alt="picture-of-a-man3"
-              width="450"
-              height="460"
-              src="images/main-page/crewprofile4.jpg"
-            />
-            <h4>John Doe</h4>
-            <p class="member-profile__caption">UI Designer</p>
-            <ul>
-              <li>
-                <div class="member-profile__icons-media">
-                  <svg
-                    class="member-profile__icons--svg-media"
-                    width="44px"
-                    height="44px"
-                  >
-                    <use href="./images/svg/icons.svg#icon-instagram"></use>
-                  </svg>
-                </div>
-              </li>
-              <li>
-                <div class="member-profile__icons-media">
-                  <svg
-                    class="member-profile__icons--svg-media"
-                    width="44px"
-                    height="44px"
-                  >
-                    <use href="./images/svg/icons.svg#icon-twitter"></use>
-                  </svg>
-                </div>
-              </li>
-              <li>
-                <div class="member-profile__icons-media">
-                  <svg
-                    class="member-profile__icons--svg-media"
-                    width="44px"
-                    height="44px"
-                  >
-                    <use href="./images/svg/icons.svg#icon-facebook"></use>
-                  </svg>
-                </div>
-              </li>
-
-              <li>
-                <div class="member-profile__icons-media">
-                  <svg
-                    class="member-profile__icons--svg-media"
-                    width="44px"
-                    height="44px"
-                  >
-                    <use href="./images/svg/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!--
+        <!--
 
    Section Crew end
 
   -->
-      <!--
+        <!--
 
    Section Clients start
 
   -->
 
-      <section class="section-clients">
-        <h2>Nasi klienci</h2>
-        <div class="section-clients__logos">
-          <svg
-            class="section-clients__logos--icons"
-            width="170px"
-            height="92px"
-          >
-            <use href="./images/svg/icons.svg#icon-client-1"></use>
-          </svg>
-          <svg
-            class="section-clients__logos--icons"
-            width="170px"
-            height="92px"
-          >
-            <use href="./images/svg/icons.svg#icon-client-2"></use>
-          </svg>
-          <svg
-            class="section-clients__logos--icons"
-            width="170px"
-            height="92px"
-          >
-            <use href="./images/svg/icons.svg#icon-client-3"></use>
-          </svg>
-          <svg
-            class="section-clients__logos--icons"
-            width="170px"
-            height="92px"
-          >
-            <use href="./images/svg/icons.svg#icon-client-4"></use>
-          </svg>
-          <svg
-            class="section-clients__logos--icons"
-            width="170px"
-            height="92px"
-          >
-            <use href="./images/svg/icons.svg#icon-client-5"></use>
-          </svg>
-          <svg
-            class="section-clients__logos--icons"
-            width="170px"
-            height="92px"
-          >
-            <use href="./images/svg/icons.svg#icon-client-6"></use>
-          </svg>
-        </div>
-      </section>
-
+        <section class="section-clients">
+          <div class="container">
+            <h2>Nasi klienci</h2>
+            <div class="section-clients__logos">
+              <svg
+                class="section-clients__logos--icons"
+                width="170px"
+                height="92px"
+              >
+                <use href="./images/svg/icons.svg#icon-client-1"></use>
+              </svg>
+              <svg
+                class="section-clients__logos--icons"
+                width="170px"
+                height="92px"
+              >
+                <use href="./images/svg/icons.svg#icon-client-2"></use>
+              </svg>
+              <svg
+                class="section-clients__logos--icons"
+                width="170px"
+                height="92px"
+              >
+                <use href="./images/svg/icons.svg#icon-client-3"></use>
+              </svg>
+              <svg
+                class="section-clients__logos--icons"
+                width="170px"
+                height="92px"
+              >
+                <use href="./images/svg/icons.svg#icon-client-4"></use>
+              </svg>
+              <svg
+                class="section-clients__logos--icons"
+                width="170px"
+                height="92px"
+              >
+                <use href="./images/svg/icons.svg#icon-client-5"></use>
+              </svg>
+              <svg
+                class="section-clients__logos--icons"
+                width="170px"
+                height="92px"
+              >
+                <use href="./images/svg/icons.svg#icon-client-6"></use>
+              </svg>
+            </div>
+          </div>
+        </section>
+      </div>
       <!--
 
    Section Clients end
@@ -569,96 +572,100 @@
 
   -->
     <footer class="section-footer">
-      <div class="foot-logo-contact">
-        <a href="./index.html" class="foot-logo-contact__logo-link"
-          ><span class="foot-logo-contact__logo-color">Web</span>Studio</a
-        >
-        <address>
-          <p style="color: #ffffff">m. Warszawa, Aleje Jerozolimskie 21</p>
-          <p>
-            <a
-              class="foot-logo-contact__contact-link"
-              style="text-decoration: underline"
-              href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </p>
-          <p>
-            <a class="foot-logo-contact__contact-link" href="tel:0048111111111"
-              >+48 111 111 111</a
-            >
-          </p>
-        </address>
-      </div>
-      <div class="foot-join-us">
-        <div>
-          <p><b>dołącz do nas</b></p>
-          <ul>
-            <li class="foot-join-us__footer-icons">
-              <div>
+      <div class="container">
+        <div class="foot-logo-contact">
+          <a href="./index.html" class="foot-logo-contact__logo-link"
+            ><span class="foot-logo-contact__logo-color">Web</span>Studio</a
+          >
+          <address>
+            <p style="color: #ffffff">m. Warszawa, Aleje Jerozolimskie 21</p>
+            <p>
+              <a
+                class="foot-logo-contact__contact-link"
+                style="text-decoration: underline"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </p>
+            <p>
+              <a
+                class="foot-logo-contact__contact-link"
+                href="tel:0048111111111"
+                >+48 111 111 111</a
+              >
+            </p>
+          </address>
+        </div>
+        <div class="foot-join-us">
+          <div>
+            <p><b>dołącz do nas</b></p>
+            <ul>
+              <li class="foot-join-us__footer-icons">
+                <div>
+                  <svg
+                    class="foot-join-us__footer-icons--svg-media"
+                    height="44px"
+                    width="44px"
+                  >
+                    <use href="./images/svg/icons.svg#icon-instagram"></use>
+                  </svg>
+                </div>
+              </li>
+
+              <li class="foot-join-us__footer-icons">
                 <svg
                   class="foot-join-us__footer-icons--svg-media"
                   height="44px"
                   width="44px"
                 >
-                  <use href="./images/svg/icons.svg#icon-instagram"></use>
+                  <use href="./images/svg/icons.svg#icon-twitter"></use>
                 </svg>
-              </div>
-            </li>
+              </li>
 
-            <li class="foot-join-us__footer-icons">
-              <svg
-                class="foot-join-us__footer-icons--svg-media"
-                height="44px"
-                width="44px"
-              >
-                <use href="./images/svg/icons.svg#icon-twitter"></use>
-              </svg>
-            </li>
+              <li class="foot-join-us__footer-icons">
+                <svg
+                  class="foot-join-us__footer-icons--svg-media"
+                  height="44px"
+                  width="44px"
+                >
+                  <use href="./images/svg/icons.svg#icon-facebook"></use>
+                </svg>
+              </li>
 
-            <li class="foot-join-us__footer-icons">
-              <svg
-                class="foot-join-us__footer-icons--svg-media"
-                height="44px"
-                width="44px"
-              >
-                <use href="./images/svg/icons.svg#icon-facebook"></use>
-              </svg>
-            </li>
-
-            <li class="foot-join-us__footer-icons">
-              <svg
-                class="foot-join-us__footer-icons--svg-media"
-                height="44px"
-                width="44px"
-              >
-                <use href="./images/svg/icons.svg#icon-linkedin"></use>
-              </svg>
-            </li>
-          </ul>
+              <li class="foot-join-us__footer-icons">
+                <svg
+                  class="foot-join-us__footer-icons--svg-media"
+                  height="44px"
+                  width="44px"
+                >
+                  <use href="./images/svg/icons.svg#icon-linkedin"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
 
-      <div class="foot-newsletter">
-        <p><b>zapisz się do newslettera</b></p>
-        <form name="sign-to-newsletter" autocomplete="on" novalidate>
-          <label>
-            <input
-              class="foot-newsletter__email"
-              type="email"
-              name="email"
-              placeholder="E-mail"
-            />
-          </label>
-        </form>
-      </div>
-      <div class="foot-newsletter__button">
-        <button type="submit" class="button__item">
-          <b>Zapisz się</b>
-          <svg class="button__item--icon-send" height="24px" width="24px">
-            <use href="./images/svg/icons.svg#icon-send"></use>
-          </svg>
-        </button>
+        <div class="foot-newsletter">
+          <p><b>zapisz się do newslettera</b></p>
+          <form name="sign-to-newsletter" autocomplete="on" novalidate>
+            <label>
+              <input
+                class="foot-newsletter__email"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+            </label>
+          </form>
+        </div>
+        <div class="foot-newsletter__button">
+          <button type="submit" class="button__item">
+            <b>Zapisz się</b>
+            <svg class="button__item--icon-send" height="24px" width="24px">
+              <use href="./images/svg/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </footer>
     <!--

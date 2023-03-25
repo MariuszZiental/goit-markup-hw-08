@@ -2,10 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: auto;
-
-  width: 480px;
-  height: 400px;
+  background: $black-box-color;
   background-image: linear-gradient(
       to bottom,
       rgba(47, 48, 58, 0.4),
@@ -14,16 +11,21 @@
     url("../images/main-page/baner.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 480px 400px;
-  background: $black-box-color;
+  background-size: cover;
   width: 100%;
 }
+
 @media (min-device-pixel-ratio: 3),
   (-webkit-min-device-pixel-ratio: 3),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .section-heading {
-    background-image: url("../images/main-page/baner@3x.jpg");
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/main-page/baner@3x.jpg");
   }
 }
 
@@ -32,8 +34,8 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 480px;
-  margin: auto;
+  width: 365px;
+  height: 164px;
 
   .section-heading__content--text {
     display: flex;
