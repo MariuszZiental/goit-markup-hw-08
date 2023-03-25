@@ -133,11 +133,22 @@ h4 {
 }
 
 .wraper {
-  margin: 0px auto;
+  margin: 0 auto;
   max-width: 1200px;
 }
 
 .container {
+  width: 100%;
+  padding: 0 15px;
+}
+@media (min-width: $desktop-breakpoint) {
+  .container {
+    width: 1200px;
+    padding: 0;
+  }
+}
+
+.container2 {
   min-width: 320px;
   max-width: 767px;
   padding-left: 15px;
