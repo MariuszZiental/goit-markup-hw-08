@@ -5,6 +5,12 @@
   align-items: center;
   border-bottom: 1px solid $navbar-border-color;
 }
+@media (min-width: $tablet-breakpoint) {
+  .header-items {
+    display: flex;
+    
+  }
+}
 @media (min-width: $desktop-breakpoint) {
   .header-items {
     display: flex;

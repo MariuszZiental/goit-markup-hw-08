@@ -1,25 +1,22 @@
-.menu {
+/*   Wysuwane menu nawigacji   */
+
+.mobile-menu {
   display: flex;
-  padding: 0;
-  margin: 0;
-  list-style: none;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 480px;
+  height: 700px;
+  padding: 32px;
+  background-color: $brand-color;
+  z-index: 998;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
 }
 
-@media (min-width: $tablet-breakpoint) {
-  .menu {
-    display: none;
-  }
-}
-.menu .navigation-links__top-link {
-  padding: 10px;
-  text-decoration: none;
-}
+/*   Hamburger   */
 
-.menu .navigation-links__top-link:focus {
-  text-decoration: underline;
-}
-
-.menu-toggle {
+.mobile-menu__toggle-button {
   display: flex;
   min-height: 40px;
   min-width: 40px;
@@ -35,39 +32,71 @@
   cursor: pointer;
   @extend %transition;
 }
-.menu-toggle:hover {
+.mobile-menu__toggle-button:hover {
   color: $brand-color;
 }
-.menu-toggle:focus {
+.mobile-menu__toggle-button:focus {
   color: $logo-white-font-color;
   background-color: $brand-color;
 }
+
+.mobile-menu .mobile-menu__toggle-button {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  color: black;
+}
 @media (min-width: $tablet-breakpoint) {
-  .menu-toggle {
+  .mobile-menu {
+    .mobile-menu__toggle-button {
+      display: none;
+    }
+  }
+}
+
+.mobile-menu__toggle-button-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $logo-white-font-color;
+  opacity: 1;
+  pointer-events: none;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 47px;
+  font-family: 'Roboto';
+  color: $main-font-color;
+}
+@media (min-width: $tablet-breakpoint) {
+  .toggle-links {
     display: none;
   }
 }
 
-.menu-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vw;
-  padding: 32px;
-  background-color: $brand-color;
-  z-index: 998;
-  transform: translateX(100%);
-  transition: transform 250ms ease-in-out;
 
+
+
+
+
+.menu {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-
-.menu-container .menu-toggle {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  color: black;
+@media (min-width: $tablet-breakpoint) {
+  .menu {
+    display: flex;
+  }
+}
+.menu .navigation-links__top-link {
+  padding: 10px;
+  text-decoration: none;
+}
+.menu .navigation-links__top-link:focus {
+  text-decoration: underline;
 }
 
 .close-menu {
@@ -82,4 +111,8 @@
 
 .is-open {
   display: flex;
+  @extend %transition;
+  transform: translateX(-50%) translateY(-50%) scale(0) rotate(0deg)
+    skew(40deg, 40deg);
 }
+

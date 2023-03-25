@@ -792,34 +792,50 @@
 
   -->
 
-    <div class="menu-container js-menu-container" id="mobile-menu">
-      <button type="button" class="menu-toggle js-close-menu">
-        <svg
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
+    <section class="mobile-menu js-menu-container" id="mobile-menu">
+      <div class="container">
+        <button
+          type="button"
+          class=".menu-container__toggle-button js-close-menu"
         >
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <div class="menu-container is-open">
-        <nav class="navigation-links">
-          <a class="navigation-links__top-link active" href="./index.html"
-            >Agencja</a
+          <svg
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
           >
-          <a class="navigation-links__top-link" href="./portfolio.html"
-            >Portfolio</a
-          >
-          <a class="navigation-links__top-link" href="./kontakt">Kontakt</a>
-        </nav>
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <div class="is-open">
+          <nav class="toggle-links">
+            <a class="mobile-menu__toggle-button-links active" href="./index.html"
+              >Agencja</a
+            >
+            <a class="mobile-menu__toggle-button-links" href="./portfolio.html"
+              >Portfolio</a
+            >
+            <a class="mobile-menu__toggle-button-links" href="./kontakt">Kontakt</a>
+          </nav>
+          <address>
+            <div>
+            <a class="mobile-menu__toggle-button--contacts"
+              href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </div>
+          <div>
+            <a class="mobile-menu__toggle-button--contacts" 
+            href="tel:0048111111111">+48 111 111 111</a>
+          </div>
+        </div>
+          </address>
+        </div>
       </div>
-    </div>
+    </section>
 
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
