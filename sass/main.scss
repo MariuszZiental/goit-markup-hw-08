@@ -18,7 +18,7 @@
 
 @import "components/__portfolio";
 
-@import "components/_menu-toggle";
+@import "components/__menu-toggle";
 
 * {
   box-sizing: border-box;
@@ -148,9 +148,8 @@ h4 {
   }
 }
 
-.container2 {
-  min-width: 320px;
-  max-width: 767px;
+.container-portfolio {
+  
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
