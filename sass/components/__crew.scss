@@ -64,7 +64,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-breakpoint) {
   .member-profile {
     display: flex;
     flex-direction: column;

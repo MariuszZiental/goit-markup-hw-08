@@ -13,9 +13,9 @@
   margin: 0 auto;
   width: 100%;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
   .section-advantages__list-of-blocks {
-    flex-basis: calc((100% - 60px) / 3);
+    width: calc((100% - 15px) / 2);
   }
 }
 @media screen and (min-width: $desktop-breakpoint) {
@@ -30,6 +30,7 @@
     justify-content: center;
     align-items: center;
     height: 120px;
+    width: 100%;
 
     background-color: $our-crew-background;
 
@@ -38,14 +39,14 @@
       width: 70px;
     }
   }
-  @media (min-width: 1200px) {
+  @media (min-width: $desktop-breakpoint) {
     .section-advantages__image {
-      width: 270px;
+      width: 100%;
     }
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-breakpoint) {
   .section-advantages__block {
     margin: 15px;
     width: 270px;

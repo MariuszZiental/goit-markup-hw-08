@@ -36,14 +36,15 @@ body {
   margin: 0 auto;
   min-width: 320px;
   max-width: 480px;
+
 }
-@media (min-width: 768px) {
+@media (min-width: $tablet-breakpoint) {
   body {
     min-width: 768px;
     max-width: 1199px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: $desktop-breakpoint) {
   body {
     min-width: 1200px;
     max-width: 1600px;
@@ -122,10 +123,6 @@ h4 {
   margin-top: 30px;
   margin-bottom: 10px;
   text-decoration: solid;
-}
-
-.wraper {
-  max-width: 1200px;
 }
 
 .container {
