@@ -8,6 +8,8 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    column-gap: 30px;
+    row-gap: 30px;
 
     .section-clients__logos--icons {
       display: flex;
@@ -28,8 +30,9 @@
   @media screen and (min-width: $tablet-breakpoint) and (max-width: 1199px) {
     .section-clients__logos {
       .section-clients__logos--icons {
-        flex-basis: calc((100% - 60px) / 3);
-        width: 100%;
+        width: calc((100% - 30px) / 3);
+        
+        
       }
     }
   }
