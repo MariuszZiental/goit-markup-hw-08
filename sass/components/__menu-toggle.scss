@@ -65,7 +65,7 @@
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 47px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   color: $main-font-color;
 }
 @media (min-width: $tablet-breakpoint) {
@@ -73,11 +73,6 @@
     display: none;
   }
 }
-
-
-
-
-
 
 .menu {
   display: flex;
@@ -115,4 +110,3 @@
   transform: translateX(-50%) translateY(-50%) scale(0) rotate(0deg)
     skew(40deg, 40deg);
 }
-
