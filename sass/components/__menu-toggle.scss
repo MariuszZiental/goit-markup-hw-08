@@ -59,14 +59,9 @@
   z-index: 998;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+
 }
-@media (min-width: $tablet-breakpoint) {
-  .menu-container {
-    display: none;
-    justify-content: center;
-    align-items: center;
-  }
-}
+
 
 .menu-container .menu-toggle {
   position: absolute;
@@ -85,3 +80,6 @@
   visibility: visible;
 }
 
+.is-open {
+  
+}
