@@ -18,6 +18,11 @@
 .logo a {
   display: flex;
 }
+@media (min-width: $desktop-breakpoint) {
+  .logo {
+    padding-left: $padding-left-right;
+  }
+}
 
 .logo-link {
   text-decoration: none;
@@ -79,8 +84,7 @@
 @media (min-width: $desktop-breakpoint) {
   .navigation-links {
     display: flex;
-    padding-left: $padding-between;
-    padding-right: 350px;
+    
   }
 }
 
