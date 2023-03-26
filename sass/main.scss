@@ -84,18 +84,13 @@ section {
   padding-bottom: $padding-between-mobile;
   width: 100%;
 }
-@media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
-  section {
-    background-color: aqua;
-  }
-}
+
 @media (min-width: $desktop-breakpoint) /*and (max-width: 1600px) */ {
   section {
     padding-top: $padding-between;
     padding-bottom: $padding-between;
     padding-left: $padding-left-right;
     padding-right: $padding-left-right;
-    background-color: violet;
   }
 }
 
