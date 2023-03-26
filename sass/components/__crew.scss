@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   background: $our-crew-background;
+  padding: 0 auto;
 
   & li {
     display: inline-flex;
@@ -24,7 +25,13 @@
     }
   }
 }
-
+@media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
+  .section-crew {
+    column-gap: 30px;
+    row-gap: 30px;
+    width: 100%;
+  }
+}
 @media (min-width: $desktop-breakpoint) {
   .section-crew {
     width: 1600px;
@@ -65,6 +72,14 @@
   }
 }
 
+@media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
+  .member-profile {
+    display: flex;
+    flex-direction: column;
+    width: 354px;
+    height: 536px;
+  }
+}
 @media (min-width: $desktop-breakpoint) {
   .member-profile {
     display: flex;

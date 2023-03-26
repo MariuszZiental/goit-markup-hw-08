@@ -20,7 +20,7 @@
   display: flex;
   min-height: 40px;
   min-width: 40px;
-  display: flex;
+  max-width: 767px;
   align-items: center;
   justify-content: center;
   margin: 0;
@@ -47,10 +47,8 @@
   color: black;
 }
 @media (min-width: $tablet-breakpoint) {
-  .mobile-menu {
-    .mobile-menu__toggle-button {
-      display: none;
-    }
+  .mobile-menu__toggle-button {
+    display: none;
   }
 }
 

@@ -1,6 +1,7 @@
 .section-heading {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   background: $black-box-color;
   background-image: linear-gradient(
@@ -12,7 +13,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 100%;
 }
 
 @media (min-device-pixel-ratio: 3),
@@ -29,6 +29,18 @@
     background-size: cover;
   }
 }
+@media (min-width: $tablet-breakpoint) {
+  .section-heading {
+    width: 767px;
+    height: 400px;
+  }
+}
+@media (min-width: $desktop-breakpoint) {
+  .section-heading {
+    width: 1600px;
+    height: 600px;
+  }
+}
 
 .section-heading__content {
   display: flex;
@@ -37,6 +49,7 @@
   align-items: center;
   width: 365px;
   height: 164px;
+  margin: 0 auto;
 
   .section-heading__content--text {
     display: flex;

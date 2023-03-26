@@ -5,16 +5,19 @@
   align-items: center;
   border-bottom: 1px solid $navbar-border-color;
 }
-@media (min-width: $tablet-breakpoint) {
+@media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
   .header-items {
     display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
-@media (min-width: $desktop-breakpoint) {
+@media (min-width: $desktop-breakpoint) and (max-width: 1199px) {
   .header-items {
     display: flex;
     padding-top: 24px;
     padding-bottom: 24px;
+    margin: 0 auto;
   }
 }
 
@@ -22,11 +25,6 @@
 
 .logo a {
   display: flex;
-}
-@media (min-width: $desktop-breakpoint) {
-  .logo {
-    padding-left: $padding-left-right;
-  }
 }
 
 .logo-link {
@@ -85,10 +83,23 @@
     }
   }
 }
-
+@media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
+  .navigation-links {
+    display: flex;
+    padding-left: 15px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 83px;
+    padding-right: 101px;
+  }
+}
 @media (min-width: $desktop-breakpoint) {
   .navigation-links {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 90px;
+    padding-right: 300px;
   }
 }
 
@@ -131,9 +142,16 @@
   }
 }
 
+@media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
+  .contact-links {
+    display: flex;
+    flex-direction: column;
+  }
+}
 @media (min-width: $desktop-breakpoint) {
   .contact-links {
     display: flex;
+    flex-direction: row;
   }
 }
 
