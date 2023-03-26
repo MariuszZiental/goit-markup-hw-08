@@ -3,7 +3,12 @@
   flex-direction: column;
   width: 100%;
 }
-
+@media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
+  .section-footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 @media (min-width: $desktop-breakpoint) {
   .section-footer {
     flex-direction: row;
@@ -67,7 +72,12 @@
     }
   }
 }
-
+@media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
+  .foot-logo-contact {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
 @media (min-width: $desktop-breakpoint) {
   .foot-logo-contact {
     justify-content: flex-start;
