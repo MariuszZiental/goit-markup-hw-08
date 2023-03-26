@@ -1,6 +1,8 @@
 .section-footer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   margin: 0 auto;
 }
@@ -166,17 +168,12 @@
       border-color: $brand-color;
     }
   }
-  @media (min-width: $desktop-breakpoint) {
-    .foot-newsletter__email {
-      min-width: 250px;
-      max-width: 358px;
-    }
-  }
 }
 
 @media (min-width: $desktop-breakpoint) {
   .foot-newsletter {
-    padding-left: 24px;
+    display: flex;
+    padding-bottom: 70px;
   }
 }
 
@@ -234,6 +231,7 @@
   .logo-and-join {
     flex-direction: row;
     column-gap: 70px;
+    padding-right: 94px;
   }
 }
 

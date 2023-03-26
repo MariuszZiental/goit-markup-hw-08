@@ -79,12 +79,6 @@ footer {
     height: 463px;
   }
 }
-@media (min-width: $desktop-breakpoint) {
-  footer {
-    padding-left: $padding-left-right;
-    padding-right: $padding-left-right;
-  }
-}
 
 section {
   padding-top: $padding-between-mobile;
