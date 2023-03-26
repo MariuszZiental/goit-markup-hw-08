@@ -66,7 +66,12 @@
   border-radius: 0px 0px 4px 4px;
 
   .member-profile__caption {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
+  }
+  @media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
+    .member-profile__caption {
+    margin-bottom: 0px;
+    }
   }
 
   .member-profile__icons-media {
