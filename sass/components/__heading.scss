@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
   background: $black-box-color;
   background-image: linear-gradient(
       to bottom,
@@ -29,7 +30,7 @@
     background-size: cover;
   }
 }
-@media (min-width: $tablet-breakpoint) {
+@media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
   .section-heading {
     width: 767px;
     height: 400px;

@@ -3,18 +3,17 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
   border-bottom: 1px solid $navbar-border-color;
 }
 @media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
   .header-items {
-    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
   }
 }
 @media (min-width: $desktop-breakpoint) and (max-width: 1199px) {
   .header-items {
-    display: flex;
     padding-top: 24px;
     padding-bottom: 24px;
     margin: 0 auto;
@@ -154,5 +153,3 @@
     flex-direction: row;
   }
 }
-
-/*   Menu Toggle   */
