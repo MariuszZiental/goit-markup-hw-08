@@ -1,50 +1,71 @@
 .section-clients {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+}
+@media (min-width: $desktop-breakpoint) {
+  .section-clients {
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-.section-clients__list-of-logos {
+.list-of-logos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  column-gap: 30px;
+  margin: 0 auto;
   row-gap: 30px;
+  column-gap: 30px;
 
-  .section-clients__list-of-logos--box {
-    width: calc((100% - 60px) / 2);
+  .list-of-logos__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .section-clients__list-of-logos--icons {
-    display: flex;
-    flex-wrap: wrap;
+  .list-of-logos__box--icons {
+    width: 210px;
+    height: 92px;
     padding: 8px;
     border: 1px solid;
     border-radius: 4px;
-
-    cursor: pointer;
     border-color: $icon-color;
     fill: $icon-color;
+    cursor: pointer;
     @extend %transition;
   }
-  .section-clients__list-of-logos--icons:hover {
+  .list-of-logos__box--icons:hover {
     fill: $brand-color;
     border-color: $brand-color;
   }
-}
-@media screen and (min-width: $tablet-breakpoint) and (max-width: 1199px) {
-  .section-clients__list-of-logos {
-    .section-clients__list-of-logos--box {
-      flex-direction: column;
+  @media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
+    .list-of-logos {
+      width: 226px;
+      height: 92px;
+    }
+  }
+  @media (min-width: $desktop-breakpoint) {
+    .list-of-logos {
+      width: 170px;
+      height: 92px;
     }
   }
 }
-@media screen and (min-width: $desktop-breakpoint) {
-  .section-clients__list-of-logos {
+@media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
+  .list-of-logos {
+    width: calc((100% - 30px) / 1);
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: $desktop-breakpoint) {
+  .list-of-logos {
     flex-wrap: nowrap;
-    .section-clients__list-of-logos--box {
-      width: 100%;
-    }
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
   }
 }

@@ -55,27 +55,48 @@ header {
   flex-direction: row;
   width: 100%;
 }
+@media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
+  header {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+@media (min-width: $desktop-breakpoint) {
+  header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
 
 footer {
   text-decoration: none;
   background: $black-box-color;
   padding-top: $padding-between-mobile;
   padding-bottom: $padding-between-mobile;
-  width: 100%;
+}
+@media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
+  footer {
+    height: 463px;
+  }
+}
+@media (min-width: $desktop-breakpoint) {
+  footer {
+    padding-left: $padding-left-right;
+    padding-right: $padding-left-right;
+  }
 }
 
 section {
-  display: flex;
   padding-top: $padding-between-mobile;
   padding-bottom: $padding-between-mobile;
   width: 100%;
 }
-@media (min-width: $tablet-breakpoint) {
+@media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
   section {
     background-color: aqua;
   }
 }
-@media (min-width: $desktop-breakpoint) {
+@media (min-width: $desktop-breakpoint) /*and (max-width: 1600px) */ {
   section {
     padding-top: $padding-between;
     padding-bottom: $padding-between;
@@ -126,6 +147,11 @@ h4 {
 .container {
   width: 100%;
   padding: 0 15px;
+}
+@media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
+  .container {
+    width: 768px;
+  }
 }
 @media (min-width: $desktop-breakpoint) {
   .container {

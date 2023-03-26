@@ -2,21 +2,17 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin: 0 auto;
 }
 @media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
   .section-footer {
     flex-direction: row;
-    justify-content: space-between;
   }
 }
 @media (min-width: $desktop-breakpoint) {
   .section-footer {
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    width: 1600px;
-    padding-left: $padding-left-right;
-    padding-right: $padding-left-right;
   }
 }
 
@@ -46,7 +42,6 @@
   .foot-logo-contact__logo-link {
     display: flex;
     flex-direction: row;
-
     text-decoration: none;
     font-weight: 700;
     font-size: 26px;
@@ -74,8 +69,8 @@
 }
 @media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
   .foot-logo-contact {
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media (min-width: $desktop-breakpoint) {
@@ -89,7 +84,7 @@
 
 .foot-join-us {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   color: $logo-white-font-color;
@@ -129,8 +124,7 @@
 
 @media (min-width: $desktop-breakpoint) {
   .foot-join-us {
-    padding-bottom: 40px;
-    padding-left: 70px;
+    display: flex;
   }
 }
 
@@ -168,17 +162,21 @@
     font-size: 16px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     @extend %transition;
-
     &:hover {
       border-color: $brand-color;
+    }
+  }
+  @media (min-width: $desktop-breakpoint) {
+    .foot-newsletter__email {
+      min-width: 250px;
+      max-width: 358px;
     }
   }
 }
 
 @media (min-width: $desktop-breakpoint) {
   .foot-newsletter {
-    padding-left: 78px;
-    padding-bottom: 48px;
+    padding-left: 24px;
   }
 }
 
@@ -217,5 +215,55 @@
   .foot-newsletter__button {
     margin-top: 48px;
     margin-bottom: 34px;
+  }
+}
+
+/*   Hybrid's   */
+
+.logo-and-join {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
+  .logo-and-join {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: $desktop-breakpoint) {
+  .logo-and-join {
+    flex-direction: row;
+    column-gap: 70px;
+  }
+}
+
+.newsletter-and-button {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
+  .logo-and-join {
+    flex-direction: row;
+  }
+}
+@media (min-width: $desktop-breakpoint) {
+  .newsletter-and-button {
+    flex-direction: row;
+  }
+}
+
+.logo-and-join .newsletter-and-button {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
+  .logo-and-join .newsletter-and-button {
+    row-gap: 60px;
+  }
+}
+@media (min-width: $desktop-breakpoint) {
+  .logo-and-join .newsletter-and-button {
+    flex-direction: row;
+    column-gap: 70px;
   }
 }

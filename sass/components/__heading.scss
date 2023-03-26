@@ -38,7 +38,8 @@
 }
 @media (min-width: $desktop-breakpoint) {
   .section-heading {
-    width: 1600px;
+    margin: 0 auto;
+    width: 100%;
     height: 600px;
   }
 }

@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
   width: 100%;
 
   .section-workscope__list {
@@ -44,5 +45,7 @@
 @media (min-width: $desktop-breakpoint) {
   .section-workscope {
     display: flex;
+    margin: 0 auto;
+    width: 100%;
   }
 }
