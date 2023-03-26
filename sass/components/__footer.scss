@@ -8,7 +8,11 @@
 }
 @media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
   .section-footer {
+    display: grid;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
   }
 }
 @media (min-width: $desktop-breakpoint) {
@@ -225,6 +229,7 @@
   .logo-and-join {
     flex-direction: row;
     justify-content: space-between;
+    column-gap: 144px;
   }
 }
 @media (min-width: $desktop-breakpoint) {
@@ -256,7 +261,7 @@
 }
 @media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
   .logo-and-join .newsletter-and-button {
-    row-gap: 60px;
+    
   }
 }
 @media (min-width: $desktop-breakpoint) {
