@@ -1,7 +1,7 @@
 /*   Wysuwane menu nawigacji   */
 
 .mobile-menu {
-  position: fixed;
+  position: flex;
   top: 0;
   left: -100%;
   width: 100%;
@@ -26,11 +26,19 @@
 
 /*   Hamburger   */
 
+.menu-toggle {
+
+}
+@media (min-width: 768px) {
+.menu-toggle{ display: none;}}
+
+
 .mobile-menu__toggle-button {
   display: flex;
+  left: 90%;
   visibility: visible;
-  min-height: 40px;
-  min-width: 320px;
+  height: 40px;
+  width: 40px;
   max-width: 480px;
   align-items: center;
   justify-content: center;
