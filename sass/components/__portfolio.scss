@@ -141,11 +141,13 @@
 }
 @media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
     .buttons {
-      width: calc((100% - 60px) / 2);
+      width: 100%;
+      justify-content: center;
     }
   }
   @media (min-width: $desktop-breakpoint) {
     .buttons {
-      width: calc((100% - 60px) / 3);
+      width: 100%;
+      justify-content: center;
     }
   }
