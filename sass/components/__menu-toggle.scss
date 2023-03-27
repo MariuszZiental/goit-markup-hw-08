@@ -93,18 +93,19 @@
   margin: 0;
   list-style: none;
 }
-
 @media (min-width: $tablet-breakpoint) {
   .menu {
     display: flex;
   }
 }
+
 .menu .mobile-menu__toggle-button--links {
   padding: 10px;
   text-decoration: none;
+
 }
 .menu .mobile-menu__toggle-button--links:focus {
-  text-decoration: underline;
+  color: $brand-color;
 }
 
 .close-menu {
