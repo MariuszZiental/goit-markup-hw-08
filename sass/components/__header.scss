@@ -6,27 +6,26 @@
   margin: 0 auto;
   border-bottom: 1px solid $navbar-border-color;
 }
-@media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
-  .header-items {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
-}
-@media (min-width: $desktop-breakpoint) and (max-width: 1199px) {
-  .header-items {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    margin: 0 auto;
-    width: 100%;
-  }
-}
 
 /*   Logo   */
 
 .logo a {
   display: flex;
 }
-
+@media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
+  .logo {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+@media (min-width: $desktop-breakpoint) {
+  .logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
 .logo-link {
   text-decoration: none;
   font-weight: 700;
@@ -58,18 +57,21 @@
     height: 4px;
     border-radius: 4px;
     background-color: $brand-color;
-    margin-top: 28px;
+    margin-top: 47px;
     margin-bottom: 0;
   }
   & a {
     color: $main-font-color;
     text-decoration: none;
   }
-
   & a:hover {
     color: $brand-color;
   }
-
+  @media (min-width: $desktop-breakpoint) {
+    .active::after {
+      margin-top: 39px;
+    }
+  }
   .navigation-links__top-link {
     text-decoration: none;
     color: $main-font-color;

@@ -47,11 +47,12 @@
   }
 }
 
+/*   Przycisk zamkniecia mobilnego menu   */
+
 .mobile-menu .mobile-menu__toggle-button {
   position: fixed;
-  top: 16px;
-  right: 16px;
-  color: black;
+  top: 10px;
+  right: -130px;
 }
 
 .mobile-menu__toggle-button--links {

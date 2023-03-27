@@ -172,10 +172,10 @@
     color: $secondary-font-color;
   }
   @media (min-width: $desktop-breakpoint) {
-      p {
-        padding-left: 0;
-      }
+    p {
+      padding-left: 0;
     }
+  }
 
   .comment-rubric__comment {
     display: flex;
@@ -207,10 +207,10 @@
     }
   }
   @media (min-width: $desktop-breakpoint) {
-      .comment-rubric__comment {
-        margin-left: 0;
-      }
+    .comment-rubric__comment {
+      margin-left: 0;
     }
+  }
 }
 
 /*   Statement section   */
