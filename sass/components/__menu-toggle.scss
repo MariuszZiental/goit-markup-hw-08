@@ -12,7 +12,9 @@
   overflow-x: hidden;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+  transform: translateX(100%) translateY(100%) scale(0) rotate(90deg);
 }
+
 @media (min-width: $tablet-breakpoint) {
   .mobile-menu {
     display: none;
@@ -134,7 +136,7 @@
 }
 
 .mobile-menu__naw-links {
-  
+
 }
 
 
@@ -149,7 +151,5 @@
 }
 
 .is-open {
-  display: flex;
-  @extend %transition;
-  transform: translateX(100%) translateY(100%) scale(0) rotate(90deg);
+  transform: translateX(100%);
 }
