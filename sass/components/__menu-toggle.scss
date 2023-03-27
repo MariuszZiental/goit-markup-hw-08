@@ -1,7 +1,7 @@
 /*   Wysuwane menu nawigacji   */
 
 .mobile-menu {
-  position: flex;
+  position: fixed;
   top: 0;
   left: -100%;
   width: 100%;
@@ -37,11 +37,9 @@
 
 .mobile-menu__toggle-button {
   display: flex;
-  left: 90%;
   visibility: visible;
   height: 40px;
   width: 40px;
-  max-width: 480px;
   align-items: center;
   justify-content: center;
   background-color: transparent;
