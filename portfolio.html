@@ -23,7 +23,7 @@
 
   <body>
     <header>
-      <div class="navbar">
+      <div class="header-items container">
         <div class="logo">
           <a href="./index.html" class="logo-link"
             ><span class="logo-link__logo-color">Web</span>Studio</a
@@ -31,14 +31,21 @@
         </div>
 
         <nav class="navigation-links">
-          <a class="navigation-links__top-link" href="./index.html">Agencja</a>
-          <a class="navigation-links__top-link active" href="./portfolio.html">Portfolio</a>
+          <a class="navigation-links__top-link" href="./index.html"
+            >Agencja</a
+          >
+          <a class="navigation-links__top-link active" href="./portfolio.html"
+            >Portfolio</a
+          >
           <a class="navigation-links__top-link" href="./kontakt">Kontakt</a>
         </nav>
 
         <div class="contact-links">
           <div>
-            <a class="contact-links__top-contact" href="mailto:info@devstudio.com">
+            <a
+              class="contact-links__top-contact"
+              href="mailto:info@devstudio.com"
+            >
               <svg class="contact-links__contact-link--icon">
                 <use href="./images/svg/icons.svg#icon-envelope"></use>
               </svg>
@@ -58,14 +65,34 @@
     </header>
 
     <main>
-      <section class="wraper">
+      <section class="container-portfolio">
         <div class="portfolio-projects">
           <ul class="portfolio-projects__buttons">
-            <li><button class="portfolio-projects__buttons__button" type="button">Wszystkie</button></li>
-            <li><button class="portfolio-projects__buttons__button" type="button">Strony</button></li>
-            <li><button class="portfolio-projects__buttons__button" type="button">Aplikacje</button></li>
-            <li><button class="portfolio-projects__buttons__button" type="button">Dizajn</button></li>
-            <li><button class="portfolio-projects__buttons__button" type="button">Marketing</button></li>
+            <li>
+              <button class="portfolio-projects__buttons__button" type="button">
+                Wszystkie
+              </button>
+            </li>
+            <li>
+              <button class="portfolio-projects__buttons__button" type="button">
+                Strony
+              </button>
+            </li>
+            <li>
+              <button class="portfolio-projects__buttons__button" type="button">
+                Aplikacje
+              </button>
+            </li>
+            <li>
+              <button class="portfolio-projects__buttons__button" type="button">
+                Dizajn
+              </button>
+            </li>
+            <li>
+              <button class="portfolio-projects__buttons__button" type="button">
+                Marketing
+              </button>
+            </li>
           </ul>
 
           <div class="portfolio-projects__list">
@@ -78,7 +105,9 @@
               />
               <div class="portfolio-projects__note">
                 <h3 style="padding-left: 24px">Technocrack</h3>
-                <p class="portfolio-projects__note--title">Strona internetowa</p>
+                <p class="portfolio-projects__note--title">
+                  Strona internetowa
+                </p>
               </div>
               <div class="portfolio-projects__overlay">
                 <p>
@@ -190,7 +219,9 @@
               />
               <div class="portfolio-projects__note">
                 <h3 style="padding-left: 24px">Inspiration has no Borders</h3>
-                <p class="portfolio-projects__note--title">Strona internetowa</p>
+                <p class="portfolio-projects__note--title">
+                  Strona internetowa
+                </p>
               </div>
 
               <div class="portfolio-projects__overlay">
@@ -270,77 +301,102 @@
       </section>
     </main>
 
-     <footer class="section-foot">
-      <div class="foot-logo-contact">
-        <a href="./index.html" class="foot-logo-contact__logo-link"
-          ><span class="foot-logo-contact__logo-color">Web</span>Studio</a
-        >
-        <address>
-          <p style="color: #ffffff">m. Warszawa, Aleje Jerozolimskie 21</p>
-          <p>
-            <a
-              class="foot-logo-contact__contact-link"
-              style="text-decoration: underline"
-              href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </p>
-          <p>
-            <a class="foot-logo-contact__contact-link" href="tel:0048111111111"
-              >+48 111 111 111</a
-            >
-          </p>
-        </address>
+    <footer class="section-footer">
+      <div class="logo-and-join">
+        <div class="foot-logo-contact">
+          <a href="./index.html" class="foot-logo-contact__logo-link"
+            ><span class="foot-logo-contact__logo-color">Web</span>Studio</a
+          >
+          <address>
+            <p style="color: #ffffff">m. Warszawa, Aleje Jerozolimskie 21</p>
+            <p>
+              <a
+                class="foot-logo-contact__contact-link"
+                style="text-decoration: underline"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </p>
+            <p>
+              <a
+                class="foot-logo-contact__contact-link"
+                href="tel:0048111111111"
+                >+48 111 111 111</a
+              >
+            </p>
+          </address>
+        </div>
+        <div class="foot-join-us">
+          <div>
+            <p><b>dołącz do nas</b></p>
+            <ul>
+              <li class="foot-join-us__footer-icons">
+                <div>
+                  <svg
+                    class="foot-join-us__footer-icons--svg-media"
+                    height="44px"
+                    width="44px"
+                  >
+                    <use href="./images/svg/icons.svg#icon-instagram"></use>
+                  </svg>
+                </div>
+              </li>
+
+              <li class="foot-join-us__footer-icons">
+                <svg
+                  class="foot-join-us__footer-icons--svg-media"
+                  height="44px"
+                  width="44px"
+                >
+                  <use href="./images/svg/icons.svg#icon-twitter"></use>
+                </svg>
+              </li>
+
+              <li class="foot-join-us__footer-icons">
+                <svg
+                  class="foot-join-us__footer-icons--svg-media"
+                  height="44px"
+                  width="44px"
+                >
+                  <use href="./images/svg/icons.svg#icon-facebook"></use>
+                </svg>
+              </li>
+
+              <li class="foot-join-us__footer-icons">
+                <svg
+                  class="foot-join-us__footer-icons--svg-media"
+                  height="44px"
+                  width="44px"
+                >
+                  <use href="./images/svg/icons.svg#icon-linkedin"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="foot-join-us">
-        <p><b>dołącz do nas</b></p>
-        <ul>
-          <li class="foot-join-us__footer-icons">
-            <div>
-              <svg class="foot-join-us__footer-icons--svg-media" height="44px" width="44px">
-                <use href="./images/svg/icons.svg#icon-instagram"></use>
-              </svg>
-            </div>
-          </li>
-
-          <li class="foot-join-us__footer-icons">
-            <svg class="foot-join-us__footer-icons--svg-media" height="44px" width="44px">
-              <use href="./images/svg/icons.svg#icon-twitter"></use>
-            </svg>
-          </li>
-
-          <li class="foot-join-us__footer-icons">
-            <svg class="foot-join-us__footer-icons--svg-media" height="44px" width="44px">
-              <use href="./images/svg/icons.svg#icon-facebook"></use>
-            </svg>
-          </li>
-
-          <li class="foot-join-us__footer-icons">
-            <svg class="foot-join-us__footer-icons--svg-media" height="44px" width="44px">
-              <use href="./images/svg/icons.svg#icon-linkedin"></use>
-            </svg>
-          </li>
-        </ul>
-      </div>
-
-      <div class="foot-newsletter">
-        <p><b>zapisz się do newslettera</b></p>
-        <form name="sign-to-newsletter" autocomplete="on" novalidate>
-          <label>
-            <input
-              class="foot-newsletter__email"
-              type="email"
-              name="email"
-              placeholder="E-mail"
-            />
-          </label>
-          <button type="submit" class="foot-newsletter__button">
+      <div class="newsletter-and-button">
+        <div class="foot-newsletter">
+          <p><b>zapisz się do newslettera</b></p>
+          <form name="sign-to-newsletter" autocomplete="on" novalidate>
+            <label>
+              <input
+                class="foot-newsletter__email"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+            </label>
+          </form>
+        </div>
+        <div class="foot-newsletter__button">
+          <button type="submit" class="button__item">
             <b>Zapisz się</b>
-            <svg class="foot-newsletter__button--icon-send" height="24px" width="24px">
+            <svg class="button__item--icon-send" height="24px" width="24px">
               <use href="./images/svg/icons.svg#icon-send"></use>
             </svg>
           </button>
-        </form>
+        </div>
       </div>
     </footer>
   </body>
