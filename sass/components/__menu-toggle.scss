@@ -4,7 +4,7 @@
   position: fixed;
   top: 0;
   left: -100%;
-  width: 480px;
+  width: 100%;
   height: 700px;
   padding: 32px;
   background-color: $brand-color;
@@ -63,13 +63,14 @@
 
 .mobile-menu .mobile-menu__toggle-button {
   position: fixed;
+  display: flex;
   top: 10px;
   right: -130px;
 }
 
 .mobile-menu__toggle-button--links {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   color: $logo-white-font-color;
@@ -77,8 +78,6 @@
   pointer-events: none;
   font-weight: 500;
   letter-spacing: 0.02em;
-  line-height: 47px;
-  font-family: "Roboto";
   color: $main-font-color;
 }
 @media (min-width: $tablet-breakpoint) {
@@ -102,7 +101,6 @@
 .menu .mobile-menu__toggle-button--links {
   padding: 10px;
   text-decoration: none;
-
 }
 .menu .mobile-menu__toggle-button--links:focus {
   color: $brand-color;
@@ -121,5 +119,5 @@
 .is-open {
   display: flex;
   @extend %transition;
-  transform: translateX(100%) translateY(100%) scale(0) rotate(90deg)
+  transform: translateX(100%) translateY(100%) scale(0) rotate(90deg);
 }
