@@ -9,10 +9,11 @@
   padding: 32px;
   background-color: $brand-color;
   z-index: 998;
+  overflow-x: hidden;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 }
-@media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
+@media (min-width: $tablet-breakpoint) {
   .mobile-menu {
     display: none;
   }
@@ -27,6 +28,7 @@
 
 .mobile-menu__toggle-button {
   display: flex;
+  visibility: visible;
   min-height: 40px;
   min-width: 320px;
   max-width: 480px;
@@ -46,16 +48,17 @@
   color: $logo-white-font-color;
   background-color: $brand-color;
 }
-@media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
+
+@media (min-width: $tablet-breakpoint) {
   .mobile-menu__toggle-button {
     display: none;
     visibility: hidden;
-    opacity: 0;
   }
 }
 @media (min-width: $desktop-breakpoint) {
   .mobile-menu__toggle-button {
     display: none;
+    visibility: hidden;
   }
 }
 
@@ -66,6 +69,16 @@
   display: flex;
   top: 10px;
   right: -130px;
+}
+@media (min-width: $tablet-breakpoint) {
+  .mobile-menu .mobile-menu__toggle-button {
+    display: none;
+  }
+}
+@media (min-width: $desktop-breakpoint) {
+  .mobile-menu .mobile-menu__toggle-button {
+    display: none;
+  }
 }
 
 .mobile-menu__toggle-button--links {
@@ -94,11 +107,17 @@
 }
 @media (min-width: $tablet-breakpoint) {
   .menu {
-    display: flex;
+    display: none;
+  }
+}
+@media (min-width: $desktop-breakpoint) {
+  .menu {
+    display: none;
   }
 }
 
 .menu .mobile-menu__toggle-button--links {
+  display: flex;
   padding: 10px;
   text-decoration: none;
 }
