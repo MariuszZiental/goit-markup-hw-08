@@ -6,7 +6,7 @@
   width: 100%;
   margin: 0 auto;
 }
-@media (min-width: $tablet-breakpoint) {
+@media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
   .section-footer {
     display: grid;
     flex-direction: row;
@@ -73,7 +73,7 @@
     }
   }
 }
-@media (min-width: $tablet-breakpoint) {
+@media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
   .foot-logo-contact {
     justify-content: center;
     align-items: center;
@@ -224,7 +224,7 @@
   display: flex;
   flex-direction: column;
 }
-@media (min-width: $tablet-breakpoint) {
+@media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
   .logo-and-join {
     flex-direction: row;
     justify-content: space-between;
@@ -243,7 +243,7 @@
   display: flex;
   flex-direction: column;
 }
-@media (min-width: $tablet-breakpoint) {
+@media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
   .logo-and-join {
     flex-direction: row;
   }

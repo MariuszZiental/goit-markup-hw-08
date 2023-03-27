@@ -4,7 +4,7 @@
   margin: 0 auto;
   width: 100%;
 }
-@media (min-width: $tablet-breakpoint) {
+@media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
   .section-clients {
     margin: 0 auto;
     width: 100%;
@@ -51,7 +51,7 @@
     fill: $brand-color;
     border-color: $brand-color;
   }
-  @media (min-width: $tablet-breakpoint) {
+  @media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
     .list-of-logos {
       width: 226px;
       height: 92px;
@@ -64,7 +64,7 @@
     }
   }
 }
-@media (min-width: $tablet-breakpoint) {
+@media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
   .list-of-logos {
     display: flex;
     flex-basis: calc((100% - 60px) / 3);

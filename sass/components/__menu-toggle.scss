@@ -24,9 +24,7 @@
   }
 }
 
-
 /*   Przycisk menu toggle   */
-
 
 .mobile-menu__toggle-button {
   display: flex;
@@ -68,7 +66,6 @@
 
 /*   Linki nawigacji i kontaktu   */
 
-
 .mobile-menu__list-of-pages {
   flex-direction: column;
   font-size: 40px;
@@ -94,7 +91,6 @@
   }
 }
 
-
 /*   Hamburger   */
 
 .menu-toggle {
@@ -105,10 +101,6 @@
     display: none;
   }
 }
-
-
-
-
 
 /*   otwarcie i zamkniecie okna menu   */
 
@@ -124,7 +116,6 @@
 .is-open {
   transform: translateX(100%);
 }
-
 
 /*   Hybrydy   */
 
@@ -153,4 +144,3 @@
 .menu .mobile-menu__toggle-button--links:focus {
   color: $brand-color;
 }
-
