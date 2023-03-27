@@ -10,9 +10,8 @@
   background-color: $brand-color;
   z-index: 998;
   overflow-x: hidden;
-  transform: translateX(100%);
   transition: transform 250ms ease-in-out;
-  transform: translateX(100%) translateY(100%) scale(0) rotate(90deg);
+  transform: translateX(0%) translateY(100%) scale(0) rotate(90deg);
 }
 
 @media (min-width: $tablet-breakpoint) {
@@ -136,9 +135,7 @@
 }
 
 .mobile-menu__naw-links {
-
 }
-
 
 .close-menu {
   display: flex;
