@@ -279,13 +279,16 @@
 .send-button {
   border: none;
   padding: 10px 76px 10px 76px;
-  margin: 30px 164px 40px 124px;
+  margin: 14px auto;
   background-color: $brand-color;
   color: $logo-white-font-color;
   border-radius: 4px;
   font-size: 16px;
   line-height: 30px;
   @extend %transition;
+  position: fixed;
+  top: 86%;
+  left: 27%;
 
   &:hover {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

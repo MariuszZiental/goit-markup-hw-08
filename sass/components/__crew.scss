@@ -16,7 +16,7 @@
     flex-direction: column;
     row-gap: 30px;
   }
-  @media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
+  @media (min-width: $tablet-breakpoint) {
     .section-crew__list-of-members {
       flex-flow: row wrap;
       justify-content: space-evenly;
@@ -36,7 +36,7 @@
     }
   }
 }
-@media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
+@media (min-width: $tablet-breakpoint) {
   .section-crew {
     justify-content: center;
     align-items: center;
@@ -68,7 +68,7 @@
   .member-profile__caption {
     margin-bottom: 0px;
   }
-  @media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
+  @media (min-width: $tablet-breakpoint) {
     .member-profile__caption {
       margin-bottom: 0px;
     }
@@ -91,7 +91,7 @@
     }
   }
 }
-@media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
+@media (min-width: $tablet-breakpoint) {
   .member-profile {
     display: flex;
     flex-direction: column;

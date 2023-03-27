@@ -61,7 +61,7 @@ footer {
   padding-top: $padding-between-mobile;
   padding-bottom: $padding-between-mobile;
 }
-@media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
+@media (min-width: $tablet-breakpoint) {
   footer {
     height: 463px;
   }
@@ -73,7 +73,7 @@ section {
   width: 100%;
 }
 
-@media (min-width: $desktop-breakpoint) /*and (max-width: 1600px) */ {
+@media (min-width: $desktop-breakpoint) {
   section {
     padding-top: $padding-between;
     padding-bottom: $padding-between;
@@ -122,9 +122,8 @@ h4 {
 
 .container {
   width: 100%;
-  padding: 0 15px;
 }
-@media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
+@media (min-width: $tablet-breakpoint) {
   .container {
     width: 768px;
   }
@@ -140,7 +139,7 @@ h4 {
   width: 100%;
   background-color: aqua;
 }
-@media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
+@media (min-width: $tablet-breakpoint) {
   .container-portfolio {
     width: 768px;
   }

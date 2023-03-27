@@ -12,7 +12,7 @@
 .logo a {
   display: flex;
 }
-@media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
+@media (min-width: $tablet-breakpoint) {
   .logo {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -85,7 +85,7 @@
     }
   }
 }
-@media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
+@media (min-width: $tablet-breakpoint) {
   .navigation-links {
     display: flex;
     padding-left: 15px;
@@ -144,7 +144,7 @@
   }
 }
 
-@media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
+@media (min-width: $tablet-breakpoint) {
   .contact-links {
     display: flex;
     flex-direction: column;

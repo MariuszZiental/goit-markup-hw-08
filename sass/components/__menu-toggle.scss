@@ -13,7 +13,6 @@
   transition: transform 250ms ease-in-out;
   transform: translateX(0%) translateY(100%) scale(0) rotate(90deg);
 }
-
 @media (min-width: $tablet-breakpoint) {
   .mobile-menu {
     display: none;
@@ -25,6 +24,20 @@
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*   Hamburger   */
 
 .menu-toggle {
@@ -35,6 +48,12 @@
     display: none;
   }
 }
+
+
+
+/*   Przycisk menu toggle   */
+
+
 
 .mobile-menu__toggle-button {
   display: flex;
@@ -49,15 +68,19 @@
   outline: none;
   cursor: pointer;
   @extend %transition;
-}
-.mobile-menu__toggle-button:hover {
-  color: $brand-color;
-}
-.mobile-menu__toggle-button:focus {
-  color: $logo-white-font-color;
-  background-color: $brand-color;
-}
 
+  .mobile-menu__toggle-button:hover {
+    color: $brand-color;
+  }
+  .mobile-menu__toggle-button:focus {
+    color: $logo-white-font-color;
+    background-color: $brand-color;
+  }
+  .mobile-menu__toggle-button--icon {
+    border-color: aqua;
+  }
+  
+}
 @media (min-width: $tablet-breakpoint) {
   .mobile-menu__toggle-button {
     display: none;
@@ -71,7 +94,11 @@
   }
 }
 
+
+
 /*   Przycisk zamkniecia mobilnego menu   */
+
+
 
 .mobile-menu .mobile-menu__toggle-button {
   position: fixed;
@@ -90,23 +117,18 @@
   }
 }
 
-.mobile-menu__toggle-button--links {
+
+
+.menu .mobile-menu__toggle-button--links {
   display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  color: $logo-white-font-color;
-  opacity: 1;
-  pointer-events: none;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  color: $main-font-color;
+  padding: 10px;
+  text-decoration: none;
 }
-@media (min-width: $tablet-breakpoint) {
-  .mobile-menu__toggle-button--links {
-    display: none;
-  }
+.menu .mobile-menu__toggle-button--links:focus {
+  color: $brand-color;
 }
+
+
 
 .menu {
   display: flex;
@@ -125,17 +147,43 @@
   }
 }
 
-.menu .mobile-menu__toggle-button--links {
-  display: flex;
-  padding: 10px;
-  text-decoration: none;
-}
-.menu .mobile-menu__toggle-button--links:focus {
-  color: $brand-color;
+
+
+
+
+
+
+.mobile-menu__links {
+  flex-direction: column;
+  font-size: 40px;
+line-height: 47px;
+text-decoration: none;
+color: $main-font-color;
+
+.mobile-menu__toggle-links {
+
 }
 
-.mobile-menu__naw-links {
 }
+
+.mobile-menu__toggle-button--links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: $main-font-color;
+  }
+  @media (min-width: $tablet-breakpoint) {
+    .mobile-menu__toggle-button--links {
+      display: none;
+    }
+  }
+
+
+
+
+
+
 
 .close-menu {
   display: flex;
@@ -146,7 +194,6 @@
   height: 30px;
   visibility: visible;
 }
-
 .is-open {
   transform: translateX(100%);
 }

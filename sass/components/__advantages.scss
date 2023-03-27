@@ -8,7 +8,7 @@
   margin: 0 auto;
   color: $secondary-font-color;
 }
-@media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
+@media (min-width: $tablet-breakpoint) {
   .section-advantages {
     justify-content: center;
     align-items: center;
@@ -30,7 +30,7 @@
   align-items: center;
 }
 
-@media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
+@media (min-width: $tablet-breakpoint) {
   .section-advantages__list-of-blocks {
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -65,7 +65,7 @@
   }
 }
 
-@media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
+@media (min-width: $tablet-breakpoint) {
   .section-advantages__block {
     width: 350px;
   }
