@@ -16,7 +16,6 @@
   transform: translate(-50%, -50%);
   width: 450px;
   height: 609px;
-  min-height: 581px;
   border-radius: 4px;
   background-color: $logo-white-font-color;
   @extend %transition;
@@ -24,6 +23,15 @@
   &:hover {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+}
+@media (min-width: $desktop-breakpoint) {
+  .modal {
+    top: 33%;
+    left: 50%;
+    width: 528px;
+    height: 600px;
+    padding: 40px;
   }
 }
 
@@ -55,6 +63,11 @@
   flex-direction: column;
   padding-left: 40px;
 }
+@media (min-width: $desktop-breakpoint) {
+  .modal__form {
+    padding-left: 0;
+  }
+}
 
 .modal__form-title {
   display: flex;
@@ -62,6 +75,11 @@
   font-size: 20px;
   line-height: 23px;
   margin: 0 auto;
+}
+@media (min-width: $desktop-breakpoint) {
+  .modal__form-title {
+    padding: 0;
+  }
 }
 
 .modal__rubric {
@@ -75,6 +93,11 @@
     line-height: 14px;
     letter-spacing: 0.01em;
     color: #757575;
+  }
+  @media (min-width: $desktop-breakpoint) {
+    p {
+      padding-left: 0;
+    }
   }
 
   .modal__box {
@@ -125,6 +148,13 @@
       }
     }
   }
+  @media (min-width: $desktop-breakpoint) {
+    .modal__box {
+      width: 448px;
+      padding-left: 0;
+      margin-left: 0;
+    }
+  }
 }
 
 /*   Comment rubric   */
@@ -141,6 +171,11 @@
     letter-spacing: 0.01em;
     color: $secondary-font-color;
   }
+  @media (min-width: $desktop-breakpoint) {
+      p {
+        padding-left: 0;
+      }
+    }
 
   .comment-rubric__comment {
     display: flex;
@@ -165,7 +200,17 @@
         border-color: $brand-color;
       }
     }
+    @media (min-width: $desktop-breakpoint) {
+      textarea {
+        width: 448px;
+      }
+    }
   }
+  @media (min-width: $desktop-breakpoint) {
+      .comment-rubric__comment {
+        margin-left: 0;
+      }
+    }
 }
 
 /*   Statement section   */
