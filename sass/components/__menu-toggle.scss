@@ -74,6 +74,7 @@
   flex-direction: column;
   font-size: 40px;
   line-height: 47px;
+  height: 100%;
   row-gap: 302px;
 
   color: $main-font-color;
@@ -154,7 +155,9 @@
 
 .menu-toggle {
   display: flex;
-  border: 2px solid red;
+  border: 10px solid $logo-white-font-color;
+  background-color: $logo-white-font-color;
+  color: $logo-white-font-color;
 }
 @media (min-width: 768px) {
   .menu-toggle {
