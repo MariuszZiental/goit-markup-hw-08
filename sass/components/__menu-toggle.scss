@@ -90,6 +90,10 @@
       align-items: inherit;
       text-decoration: none;
       color: $main-font-color;
+      @extend %transition;
+      &:hover {
+        color: $brand-color;
+      }
     }
     .list-of-pages__links--contacts {
       display: flex;
@@ -110,18 +114,29 @@
       justify-content: flex-start;
       font-style: normal;
       text-decoration: none;
-      color: $brand-color;
+
       font-size: 18px;
       line-height: 22px;
       padding: 10px;
-      @extend %transition;
 
+      .list-of-pages__links--instagram {
+        padding: 10px;
+        color: $brand-color;
+      }
       .list-of-pages__links--twitter {
+        padding: 10px;
+        color: $brand-color;
         border-left: 1px solid rgba(33, 33, 33, 0.2);
       }
       .list-of-pages__links--facebook {
+        padding: 10px;
+        color: $brand-color;
         border-left: 1px solid rgba(33, 33, 33, 0.2);
         border-right: 1px solid rgba(33, 33, 33, 0.2);
+      }
+      .list-of-pages__links--linkedin {
+        padding: 10px;
+        color: $brand-color;
       }
     }
   }
