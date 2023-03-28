@@ -50,9 +50,6 @@
     color: $logo-white-font-color;
     background-color: $brand-color;
   }
-  .mobile-menu__toggle-button--icon {
-    color: aqua;
-  }
 }
 @media (min-width: $tablet-breakpoint) {
   .mobile-menu__toggle-button {
@@ -64,6 +61,19 @@
   .mobile-menu__toggle-button {
     display: none;
     visibility: hidden;
+  }
+}
+
+.js-open-menu {
+  background-color: $logo-white-font-color;
+  border-color: $logo-white-font-color;
+  @extend %transition;
+  &:hover {
+    fill: $logo-white-font-color;
+    background-color: $brand-color;
+    border-color: $logo-white-font-color;
+    padding: 6px 8px 6px 8px;
+    border-radius: 40%;
   }
 }
 
@@ -156,11 +166,6 @@
   }
 }
 
-.js-open-menu {
-  background-color: $logo-white-font-color;
-  border-color: $logo-white-font-color;
-}
-
 /*   otwarcie i zamkniecie okna menu   */
 
 .close-menu {
@@ -183,6 +188,7 @@
   display: flex;
   top: 10px;
   right: 10px;
+  @extend %transition;
 }
 @media (min-width: $tablet-breakpoint) {
   .mobile-menu .mobile-menu__toggle-button {
