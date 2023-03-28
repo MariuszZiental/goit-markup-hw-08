@@ -51,7 +51,7 @@
     background-color: $brand-color;
   }
   .mobile-menu__toggle-button--icon {
-    border-color: aqua;
+    color: aqua;
   }
 }
 @media (min-width: $tablet-breakpoint) {
@@ -94,6 +94,9 @@
       &:hover {
         color: $brand-color;
       }
+      &:focus {
+        color: $brand-color;
+      }
     }
     .list-of-pages__links--contacts {
       display: flex;
@@ -108,13 +111,18 @@
     .email {
       color: $secondary-font-color;
       padding-bottom: 32px;
+      &:hover {
+        color: $brand-color;
+      }
+      &:focus {
+        color: $brand-color;
+      }
     }
     .list-of-pages__links--social-media {
       display: flex;
       justify-content: flex-start;
       font-style: normal;
       text-decoration: none;
-
       font-size: 18px;
       line-height: 22px;
       padding: 10px;
@@ -146,6 +154,7 @@
 
 .menu-toggle {
   display: flex;
+  border: 2px solid red;
 }
 @media (min-width: 768px) {
   .menu-toggle {
