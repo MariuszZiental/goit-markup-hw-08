@@ -53,24 +53,24 @@
     border-color: $brand-color;
   }
   @media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
-    .list-of-logos {
+    .list-of-logos__box--icons {
       width: 226px;
-      height: 92px;
+    height: 92px;
     }
   }
   @media (min-width: $desktop-breakpoint) {
-    .list-of-logos {
-      width: 170px;
-      height: 92px;
+    .list-of-logos__box--icons {
+     width: 170px;
+    height: 92px;
     }
   }
 }
 @media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
   .list-of-logos {
     display: flex;
-    flex-basis: calc((100% - 60px) / 3);
     justify-content: center;
     align-items: center;
+    
   }
 }
 @media (min-width: $desktop-breakpoint) {
@@ -79,5 +79,7 @@
     justify-content: center;
     align-items: center;
     column-gap: 30px;
+    width: 170px;
+    height: 92px;
   }
 }

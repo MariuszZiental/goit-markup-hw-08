@@ -2,14 +2,17 @@
 
 .mobile-menu {
   position: fixed;
+  display: flex;
+  flex-direction: column;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  padding: 32px;
-  background-color: $brand-color;
+  padding: 48px 40px;
   z-index: 998;
   overflow-x: hidden;
+  background-color: $logo-white-font-color;
+
   transition: transform 250ms ease-in-out;
   transform: translateX(0%) translateY(100%) scale(0) rotate(90deg);
 }
@@ -67,26 +70,59 @@
 /*   Linki nawigacji i kontaktu   */
 
 .mobile-menu__list-of-pages {
+  display: flex;
   flex-direction: column;
   font-size: 40px;
   line-height: 47px;
-  text-decoration: none;
+  row-gap: 302px;
+
   color: $main-font-color;
 
   .list-of-pages__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 32px;
+
     .list-of-pages__links--sides {
       display: flex;
-      justify-content: center;
-      align-items: center;
-
+      justify-content: flex-start;
+      align-items: inherit;
+      text-decoration: none;
       color: $main-font-color;
     }
     .list-of-pages__links--contacts {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
+      font-style: normal;
+      text-decoration: none;
+    }
+    .telephone {
+      color: $brand-color;
+    }
+    .email {
+      color: $secondary-font-color;
+      padding-bottom: 32px;
+    }
+    .list-of-pages__links--social-media {
+      display: flex;
+      justify-content: flex-start;
+      font-style: normal;
+      text-decoration: none;
+      color: $brand-color;
+      font-size: 18px;
+      line-height: 22px;
+      padding: 10px;
+      @extend %transition;
 
-      color: $main-font-color;
+      .list-of-pages__links--twitter {
+        border-left: 1px solid rgba(33, 33, 33, 0.2);
+      }
+      .list-of-pages__links--facebook {
+        border-left: 1px solid rgba(33, 33, 33, 0.2);
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+      }
     }
   }
 }
