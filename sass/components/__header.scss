@@ -11,6 +11,7 @@
 
 .logo a {
   display: flex;
+  padding-left: 15px;
 }
 @media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
   .logo {

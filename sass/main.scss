@@ -96,6 +96,19 @@ h1 {
   line-height: 1.75em;
   color: $logo-white-font-color;
 }
+@media (min-width: $tablet-breakpoint) and (max-width: 1199px) {
+  h1 {
+    padding-left: 144px;
+    padding-right: 144px;
+  }
+}
+@media (min-width: $desktop-breakpoint) {
+  h1 {
+    font-size: 44px;
+    padding-left: 224px;
+    padding-right: 224px;
+  }
+}
 
 h2 {
   text-align: center;

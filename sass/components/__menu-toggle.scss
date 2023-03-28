@@ -119,34 +119,25 @@
         color: $brand-color;
       }
     }
+
     .list-of-pages__links--social-media {
       display: flex;
       justify-content: flex-start;
       font-style: normal;
-      text-decoration: none;
       font-size: 18px;
       line-height: 22px;
-      padding: 10px;
 
-      .list-of-pages__links--instagram {
+      .list-of-pages__links--type {
         padding: 10px;
         color: $brand-color;
-      }
-      .list-of-pages__links--twitter {
-        padding: 10px;
-        color: $brand-color;
-        border-left: 1px solid rgba(33, 33, 33, 0.2);
-      }
-      .list-of-pages__links--facebook {
-        padding: 10px;
-        color: $brand-color;
-        border-left: 1px solid rgba(33, 33, 33, 0.2);
         border-right: 1px solid rgba(33, 33, 33, 0.2);
       }
-      .list-of-pages__links--linkedin {
-        padding: 10px;
-        color: $brand-color;
-      }
+    }
+    .list-of-pages__links--social-media a {
+      text-decoration: none;
+    }
+    .list-of-pages__links--social-media a:last-child {
+      border-right: none;
     }
   }
 }
@@ -155,7 +146,7 @@
 
 .menu-toggle {
   display: flex;
-  border: 10px solid $logo-white-font-color;
+  padding-right: 10px;
   background-color: $logo-white-font-color;
   color: $logo-white-font-color;
 }
@@ -163,6 +154,11 @@
   .menu-toggle {
     display: none;
   }
+}
+
+.js-open-menu {
+  background-color: $logo-white-font-color;
+  border-color: $logo-white-font-color;
 }
 
 /*   otwarcie i zamkniecie okna menu   */
